@@ -1,0 +1,5 @@
+"statistic","value"
+"controls_with_age",21
+"spearman_rho_score_vs_age",-0.26
+"spearman_P",0.26
+"AUC_age_alone_LoFMis_vs_controls_with_age",0.459

@@ -1,0 +1,7 @@
+strategy,policy,LoFMis_sensitivity,LoFMis_specificity_vs37,FP_specimens,accuracy_3class,accuracy_4class,carriers_called_RefRef,stage2_AUC_WS_vs_SM,stage2_AUC_Run3carriers_vs_SM,n_stage2
+consensus30,full_inner_recall,6/7 (0.421-0.996),32/37 (0.712-0.955),WS_1;WS_10;WS_3;WS_8;WS_9,54/60 (0.795-0.962),53/60 (0.774-0.952),WS_7,0.729,0.536,17
+consensus30,inner_spec90,0/7 (0.000-0.410),37/37 (0.905-1.000),,53/60 (0.774-0.952),52/60 (0.754-0.941),WS_7,0.729,0.536,17
+diverse30,full_inner_recall,6/7 (0.421-0.996),35/37 (0.818-0.993),WS_10;WS_8,57/60 (0.861-0.990),56/60 (0.838-0.982),WS_7,0.7,0.357,17
+diverse30,inner_spec90,0/7 (0.000-0.410),36/37 (0.858-0.999),WS_10,52/60 (0.754-0.941),51/60 (0.734-0.929),WS_7,0.7,0.357,17
+adaptive,full_inner_recall,6/7 (0.421-0.996),33/37 (0.746-0.970),WS_1;WS_10;WS_3;WS_8,55/60 (0.816-0.972),54/60 (0.795-0.962),WS_7,0.671,0.393,17
+adaptive,inner_spec90,0/7 (0.000-0.410),36/37 (0.858-0.999),WS_10,52/60 (0.754-0.941),51/60 (0.734-0.929),WS_7,0.671,0.393,17

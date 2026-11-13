@@ -1,0 +1,6 @@
+"comparison","statistic","estimate","ci_low","ci_high","P","test"
+"Carrier vs pooled controls (DD+WW)","ratio of medians",0.352239752995485,0.277677683410429,0.412860458554168,5.74167949683228e-09,"Wilcoxon rank-sum"
+"LoF/Mis vs pooled controls (DD+WW)","ratio of medians",0.282481619742236,0.192109123594085,0.393280479496227,3.7177374741989e-07,"Wilcoxon rank-sum"
+"LoF/Mis vs carrier","ratio of medians",0.801958374487779,0.542386356215758,1.18194935380839,0.269847799259564,"Wilcoxon rank-sum"
+"Disease control vs healthy adult","Wilcoxon only",NA,NA,NA,0.316340664166751,"Wilcoxon rank-sum"
+"LoF/LoF detection vs all other groups","Fisher exact on quantified / not",NA,NA,NA,6.68411774600358e-15,"Fisher exact (0/16 vs 44/44)"

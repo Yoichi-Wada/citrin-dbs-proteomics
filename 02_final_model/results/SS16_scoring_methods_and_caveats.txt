@@ -1,0 +1,20 @@
+LoF/LoF (SS) scoring using frozen final 44-non-SS full-training ensemble
+RDS: <repository>/02_final_model/FinalModel_reproducibility/final_training_model_FROZEN_NOT_VALIDATED.rds
+RDS MD5: b13da448e0c52f95fdea291ada6b9e03
+raw_data.xlsx MD5: defbb0c2c6c8d2ebba50595c77d602b5
+sample_info.csv MD5: 164be532c465942836125e057f638d89
+Model version: citrin_nested_ensemble_familyLOFO_1.1
+Engine version: two_run_fixed_panel_2.2
+Model mode: no_combat
+Member seeds: 2025,2026,2027,2028,2029,2030,2031,2032,2033,2034
+Test MinProb: specimen-specific q=0.01, model training sigma, deterministic member-specific seed
+Test MinProb RNG: v1.1 key_seed(fit,FINAL_ALL44/fit,member_seed)+4; SS_1..SS_16 order
+ACTB reference: P60709; log2(sample protein intensity / sample ACTB intensity)
+Model class labels are not used for scoring; SS group is only used to select test specimens
+Model coefficients, member feature lists, preprocessing stats, ComBat shifts and threshold are unchanged
+Run1 is unseen in training. If no_combat, Run1 numerical scores are extrapolation; if combat_mean, NA.
+Full inner recall threshold was calibrated on the 44 non-SS training samples, not on SS samples.
+No SS score is an independent validation of a citrin-severity or clinical diagnostic scale.
+Do not compare the 16 full-data-training-fit SS scores directly to 44 OOF scores as if one locked model scored both.
+R version: R version 4.5.2 (2025-10-31)
+glmnet version: 4.1.10

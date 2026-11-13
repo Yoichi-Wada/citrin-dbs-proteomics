@@ -1,0 +1,27 @@
+Final consensus-30 panel GO ORA (2026-11-08)
+Date: 2026-11-10
+Input: <repository>/05_signature_proteins/GO/citrin_final30_panel.csv
+Background source: <repository>/05_signature_proteins/GO/measured_proteome_GO_universe.csv
+Proteins in original raw data: 7474
+Unique-peptide-eligible proteins: 5199
+Distinct eligible gene symbols: 5198
+Unambiguously mapped Entrez gene IDs in eligible universe: 5193
+Selected original signature genes: 30
+Mapped signature Entrez IDs: 30
+Ambiguous gene symbols excluded: 2
+GO primary ontology: BP; secondary: MF, CC
+Method: clusterProfiler enrichGO; one-sided hypergeometric ORA; background=eligible measured proteins; BH within ontology
+Gene set size filter: minGSSize=10; maxGSSize=500
+R version: R version 4.5.2 (2025-10-31)
+clusterProfiler: 4.16.0
+org.Hs.eg.db: 3.21.0
+GO.db: 3.21.0
+Original Table S11 used an 18,805-gene background and its FDR is NOT reused here.
+Original 15 proteins are selected from the discovery cohort. Enrichment is exploratory, not independent validation.
+Added exploratory post-hoc SLC25A13 GOALL and direct-GO BP hypothesis-set analyses.
+Targeted FDR = BH over ALL SLC25A13-annotated GO:BP terms (unreturned terms assigned p=1), NOT only the positively overlapping enriched terms.
+SLC25A13 Entrez ID: 10165
+SLC25A13 GOALL BP annotations: 92; intersected tested GO:BP: 92
+SLC25A13 directly annotated GO:BP terms: 11; intersected tested GO:BP: 11
+See GO_SLC25A13_*_all_annotation_terms_sensitivity.csv for audit of all annotated terms, including non-overlapping terms with p=1.
+See GO_original_TableS11_claims_audit.csv to determine whether 'response to calcium ion' remains significant.

@@ -1,0 +1,5 @@
+"accession","gene","n_precursors_matrix","n_distinct_peptides_matrix","specimens_with_precursor_SM","specimens_with_precursor_DD","specimens_with_precursor_WS","specimens_with_precursor_WW","specimens_with_precursor_SS","median_precursors_per_quantified_specimen","specimens_with_1_precursor_only","specimens_with_ge2_precursors"
+"P01236","PRL",4,4,"2/7","5/21","2/10","0/6","3/16",1.5,6,6
+"P55157","MTTP",14,14,"5/7","13/21","1/10","2/6","10/16",1,16,15
+"O15013","ARHGEF10",8,8,"4/7","0/21","0/10","0/6","5/16",2,4,5
+"O94979","SEC31A",14,14,"7/7","21/21","10/10","6/6","16/16",9,0,60

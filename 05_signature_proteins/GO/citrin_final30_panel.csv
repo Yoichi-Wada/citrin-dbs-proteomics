@@ -1,0 +1,31 @@
+rank,FeatureID,Gene,Protein,UniquePeptides,members_top30,mean_stability_frequency,in_original15
+1,Q8WUD1,RAB2B,Ras-related protein Rab-2B,7,10,0.37,TRUE
+2,Q99829,CPNE1,Copine-1,7,10,0.35,TRUE
+3,Q9UHG3,PCYOX1,Prenylcysteine oxidase 1,9,10,0.25,TRUE
+4,O15013,ARHGEF10,Rho guanine nucleotide exchange factor 10,8,10,0.246666666666667,TRUE
+5,P23352,ANOS1,Anosmin-1,7,9,0.25,FALSE
+6,A0JNW5,BLTP3B,Bridge-like lipid transfer protein family member 3B,4,9,0.21,FALSE
+7,O94979,SEC31A,Protein transport protein Sec31A,14,9,0.206666666666667,TRUE
+8,Q5JSL3,DOCK11,Dedicator of cytokinesis protein 11,35,9,0.173333333333333,FALSE
+9,P55157,MTTP,Microsomal triglyceride transfer protein large subunit,14,8,0.22,TRUE
+10,P29218,IMPA1,Inositol monophosphatase 1,6,8,0.16,FALSE
+11,O76013,KRT36,"Keratin, type I cuticular Ha6",3,7,0.28,FALSE
+12,Q9H115,NAPB,Beta-soluble NSF attachment protein,5,7,0.163333333333333,TRUE
+13,Q96I15,SCLY,Selenocysteine lyase,4,7,0.16,FALSE
+14,Q99567,NUP88,Nuclear pore complex protein Nup88,10,7,0.14,FALSE
+15,Q9UKU0,ACSL6,Long-chain-fatty-acid--CoA ligase 6,15,7,0.136666666666667,FALSE
+16,P01236,PRL,Prolactin,5,6,0.213333333333333,TRUE
+17,P56556,NDUFA6,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 6,4,6,0.15,TRUE
+18,Q8N392,ARHGAP18,Rho GTPase-activating protein 18,19,6,0.13,FALSE
+19,Q06203,PPAT,Amidophosphoribosyltransferase,7,5,0.176666666666667,TRUE
+20,P16671,CD36,Platelet glycoprotein 4,4,5,0.153333333333333,FALSE
+21,Q96BS2,TESC,Calcineurin B homologous protein 3,6,5,0.143333333333333,TRUE
+22,O43306,ADCY6,Adenylate cyclase type 6,9,5,0.126666666666667,FALSE
+23,Q7Z392,TRAPPC11,Trafficking protein particle complex subunit 11,10,5,0.126666666666667,FALSE
+24,O00182,LGALS9,Galectin-9,3,5,0.116666666666667,FALSE
+25,O95232,LUC7L3,Luc7-like protein 3,4,4,0.13,FALSE
+26,Q7L5D6,GET4,Golgi to ER traffic protein 4 homolog,5,4,0.13,FALSE
+27,Q9UBQ7,GRHPR,Glyoxylate reductase/hydroxypyruvate reductase,8,4,0.123333333333333,TRUE
+28,O00522,KRIT1,Krev interaction trapped protein 1,8,4,0.12,FALSE
+29,Q7Z3V4,UBE3B,Ubiquitin-protein ligase E3B,8,4,0.116666666666667,FALSE
+30,Q9NPH3,IL1RAP,Interleukin-1 receptor accessory protein,7,4,0.106666666666667,FALSE

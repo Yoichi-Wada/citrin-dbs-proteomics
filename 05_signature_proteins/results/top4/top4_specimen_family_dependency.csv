@@ -1,0 +1,5 @@
+"accession","gene","direction","AUC_single_protein","LOSO_min","LOSO_max","LOSO_min_specimen","LOFO_min","LOFO_max","LOFO_min_family","n_SM_quantified","n_ctrl_quantified"
+"P01236","PRL","higher in SM",0.575,0.505,0.604,"SM_2",0.405,0.643,14,2,7
+"P55157","MTTP","higher in SM",0.737,0.694,0.813,"SM_4",0.694,0.814,21,5,16
+"O15013","ARHGEF10","higher in SM",0.786,0.75,0.833,"SM_2",0.7,0.833,17,4,0
+"O94979","SEC31A","higher in SM",0.707,0.658,0.793,"SM_4",0.589,0.793,17,7,37

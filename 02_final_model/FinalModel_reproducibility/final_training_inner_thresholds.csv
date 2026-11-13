@@ -1,0 +1,3 @@
+"strategy","inner_auc","full_threshold","full_inner_TP","full_inner_FP","full_inner_sensitivity","full_inner_specificity","spec90_threshold","spec90_inner_TP","spec90_inner_FP","spec90_inner_sensitivity","spec90_inner_specificity","chosen_adaptive"
+"consensus30",0.857142857142857,0.0340501492436788,7,16,1,0.567567567567568,0.209610189563344,4,3,0.571428571428571,0.918918918918919,"diverse30"
+"diverse30",0.849420849420849,0.090061838423432,7,9,1,0.756756756756757,0.516889890582892,2,0,0.285714285714286,1,"diverse30"

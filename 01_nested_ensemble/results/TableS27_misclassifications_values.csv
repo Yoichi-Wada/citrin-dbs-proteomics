@@ -1,0 +1,10 @@
+"Specimen","Group","Analytical_run","SLC25A13_ACTB_percent_of_control_median","Out_of_fold_probability","Fold_specific_threshold","Classification","Probability_minus_threshold"
+"DD_19","DD","Run3",101,0.569,0.061,"false positive",0.508
+"DD_6","DD","Run3",87,0.478,0.058,"false positive",0.419
+"DD_1","DD","Run3",99,0.265,0.038,"false positive",0.227
+"DD_10","DD","Run3",122,0.168,0.04,"false positive",0.128
+"WS_9","WS","Run3",18,0.149,0.113,"false positive",0.036
+"WW_6","WW","Run3",66,0.157,0.123,"false positive",0.035
+"SM_1","SM","Run3",28,0.029,0.024,"true positive",0.006
+"SM_6","SM","Run3",15,0.119,0.11,"true positive",0.01
+"SM_7","SM","Run3",20,0.103,0.065,"true positive",0.038

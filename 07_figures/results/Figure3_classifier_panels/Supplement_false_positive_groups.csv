@@ -1,0 +1,10 @@
+"strategy","group","n","false_positives","correctly_negative"
+"consensus30","DD",21,4,17
+"consensus30","WS",10,1,9
+"consensus30","WW",6,1,5
+"diverse30","DD",21,4,17
+"diverse30","WS",10,1,9
+"diverse30","WW",6,1,5
+"adaptive","DD",21,4,17
+"adaptive","WS",10,1,9
+"adaptive","WW",6,1,5

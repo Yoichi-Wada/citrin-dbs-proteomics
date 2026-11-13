@@ -1,0 +1,22 @@
+R version 4.5.2 (2025-10-31)
+Platform: aarch64-apple-darwin20
+Running under: macOS Tahoe 26.7.2
+
+Matrix products: default
+BLAS:   /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib 
+LAPACK: /Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/lib/libRlapack.dylib;  LAPACK version 3.12.1
+
+locale:
+[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+
+time zone: Asia/Tokyo
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+ [1] compiler_4.5.2   Matrix_1.7-4     tools_4.5.2      survival_3.8-3  
+ [5] Rcpp_1.1.0       splines_4.5.2    codetools_0.2-20 stringi_1.8.7   
+ [9] grid_4.5.2       iterators_1.0.14 foreach_1.5.2    zip_2.3.3       
+[13] shape_1.4.6.1    openxlsx_4.2.8.1 glmnet_4.1-10    lattice_0.22-7  

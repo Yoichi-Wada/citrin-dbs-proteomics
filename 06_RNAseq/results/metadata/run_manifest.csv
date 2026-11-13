@@ -1,0 +1,2 @@
+"mode","design","formula","n_samples","n_patient","n_control","n_genes_in_count_matrix","samples","note_age"
+"ENRICHED","PRIMARY","~batch + sex + status",13,7,6,777,"WW_1;WW_2;WW_3;WW_4;WW_5;WW_6;SS_9;SS_10;SS_11;SS_12;SS_13;SS_14;SS_15","age completely confounded with status; not modelled"

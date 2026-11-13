@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the manuscript and this archive."
+title: "Dried blood spot proteomics for citrin deficiency: analysis code and processed results"
+authors:
+  - family-names: Wada
+    given-names: Yoichi
+    affiliation: Tohoku University
+version: 1.0.0
+repository-code: https://github.com/Yoichi-Wada/citrin-dbs-proteomics
+license: MIT

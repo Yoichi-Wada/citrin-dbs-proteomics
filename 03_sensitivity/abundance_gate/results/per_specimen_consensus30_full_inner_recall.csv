@@ -1,0 +1,61 @@
+SampleID,group,batch,quantified,ratio_x1e4,gate_call_midpoint,probability,threshold,final_call,truth_class,correct4
+DD_1,DD,Run3,True,3.626,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_10,DD,Run3,True,4.467,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_11,DD,Run3,True,4.531,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_12,DD,Run3,True,5.359,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_13,DD,Run3,True,3.465,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_14,DD,Run3,True,4.507,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_15,DD,Run3,True,3.787,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_16,DD,Run3,True,4.455,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_17,DD,Run3,True,4.015,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_18,DD,Run3,True,3.087,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_19,DD,Run3,True,3.696,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_2,DD,Run3,True,3.133,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_20,DD,Run3,True,2.023,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_21,DD,Run3,True,2.042,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_3,DD,Run3,True,3.359,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_4,DD,Run3,True,3.654,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_5,DD,Run3,True,4.128,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_6,DD,Run3,True,3.17,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_7,DD,Run3,True,2.594,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_8,DD,Run3,True,4.451,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+DD_9,DD,Run3,True,5.482,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+SM_1,SM,Run3,True,1.032,to stage 2,0.568522973096531,0.256054172774865,LoF/Mis,LoF/Mis,True
+SM_2,SM,Run3,True,1.334,to stage 2,0.739737651501664,0.141282327563754,LoF/Mis,LoF/Mis,True
+SM_3,SM,Run3,True,0.869,to stage 2,0.76184952198429,0.141282327563754,LoF/Mis,LoF/Mis,True
+SM_4,SM,Run3,True,1.247,to stage 2,0.844089010260091,0.310534330661036,LoF/Mis,LoF/Mis,True
+SM_5,SM,Run3,True,1.602,to stage 2,0.557030321416137,0.310534330661036,LoF/Mis,LoF/Mis,True
+SM_6,SM,Run3,True,0.541,to stage 2,0.223917981128608,0.350862791367278,carrier,LoF/Mis,False
+SM_7,SM,Run3,True,0.73,to stage 2,0.434108207316634,0.37404880111693,LoF/Mis,LoF/Mis,True
+SS_1,SS,Run1,False,0.0,LoF/LoF (SLC25A13 absent),,,LoF/LoF,LoF/LoF,True
+SS_10,SS,Run2,False,0.0,LoF/LoF (SLC25A13 absent),,,LoF/LoF,LoF/LoF,True
+SS_11,SS,Run2,False,0.0,LoF/LoF (SLC25A13 absent),,,LoF/LoF,LoF/LoF,True
+SS_12,SS,Run2,False,0.0,LoF/LoF (SLC25A13 absent),,,LoF/LoF,LoF/LoF,True
+SS_13,SS,Run3,False,0.0,LoF/LoF (SLC25A13 absent),,,LoF/LoF,LoF/LoF,True
+SS_14,SS,Run3,False,0.0,LoF/LoF (SLC25A13 absent),,,LoF/LoF,LoF/LoF,True
+SS_15,SS,Run3,False,0.0,LoF/LoF (SLC25A13 absent),,,LoF/LoF,LoF/LoF,True
+SS_16,SS,Run3,False,0.0,LoF/LoF (SLC25A13 absent),,,LoF/LoF,LoF/LoF,True
+SS_2,SS,Run1,False,0.0,LoF/LoF (SLC25A13 absent),,,LoF/LoF,LoF/LoF,True
+SS_3,SS,Run1,False,0.0,LoF/LoF (SLC25A13 absent),,,LoF/LoF,LoF/LoF,True
+SS_4,SS,Run1,False,0.0,LoF/LoF (SLC25A13 absent),,,LoF/LoF,LoF/LoF,True
+SS_5,SS,Run1,False,0.0,LoF/LoF (SLC25A13 absent),,,LoF/LoF,LoF/LoF,True
+SS_6,SS,Run1,False,0.0,LoF/LoF (SLC25A13 absent),,,LoF/LoF,LoF/LoF,True
+SS_7,SS,Run1,False,0.0,LoF/LoF (SLC25A13 absent),,,LoF/LoF,LoF/LoF,True
+SS_8,SS,Run1,False,0.0,LoF/LoF (SLC25A13 absent),,,LoF/LoF,LoF/LoF,True
+SS_9,SS,Run2,False,0.0,LoF/LoF (SLC25A13 absent),,,LoF/LoF,LoF/LoF,True
+WS_1,WS,Run2,True,1.345,to stage 2,0.341875460263626,0.331513947210836,LoF/Mis,carrier,False
+WS_10,WS,Run3,True,1.222,to stage 2,0.634896106327649,0.476571365318173,LoF/Mis,carrier,False
+WS_2,WS,Run2,True,1.43,to stage 2,0.339455788332078,0.34012033674167,carrier,carrier,True
+WS_3,WS,Run2,True,1.457,to stage 2,0.349749444855379,0.34012033674167,LoF/Mis,carrier,False
+WS_4,WS,Run2,True,1.292,to stage 2,0.355637691039584,0.387904602626852,carrier,carrier,True
+WS_5,WS,Run2,True,0.919,to stage 2,0.338177610994543,0.449121993672633,carrier,carrier,True
+WS_6,WS,Run2,True,1.055,to stage 2,0.246930076041911,0.449121993672633,carrier,carrier,True
+WS_7,WS,Run3,True,1.89,Negative branch (high SLC25A13/ACTB),0.577086548942361,0.232056061844183,Ref/Ref,carrier,False
+WS_8,WS,Run3,True,1.282,to stage 2,0.543649611791243,0.232056061844183,LoF/Mis,carrier,False
+WS_9,WS,Run3,True,0.662,to stage 2,0.563890435104817,0.476571365318173,LoF/Mis,carrier,False
+WW_1,WW,Run2,True,3.491,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+WW_4,WW,Run3,True,3.014,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+WW_5,WW,Run3,True,3.798,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+WW_2,WW,Run2,True,2.628,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+WW_3,WW,Run2,True,4.493,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True
+WW_6,WW,Run3,True,2.414,Negative branch (high SLC25A13/ACTB),,,Ref/Ref,Ref/Ref,True

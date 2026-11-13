@@ -1,0 +1,6 @@
+"Comparison","Positive group (n)","Negative group (n)","AUC, ACTB-normalized (95% CI)","AUC, sample-median normalization","AUC, total-intensity normalization","AUC, DIA-NN MaxLFQ","AUC, unnormalized"
+"LoF/LoF vs all other participants",16,44,"1.000 (1.000–1.000)","1.000","1.000","1.000","1.000"
+"Reduced (carriers + LoF/Mis) vs normal (disease controls + healthy controls)",17,27,"1.000 (1.000–1.000)","1.000","0.993","1.000","1.000"
+"Any citrin deficiency (LoF/LoF + LoF/Mis) vs all other participants",23,37,"0.973 (0.933–1.000)","0.984","0.962","0.991","0.984"
+"LoF/Mis vs all non-LoF/LoF participants",7,37,"0.911 (0.793–1.000)","0.946","0.876","0.969","0.946"
+"LoF/Mis vs carriers",7,10,"0.671 (0.373–0.968)","0.800","0.586","0.886","0.800"

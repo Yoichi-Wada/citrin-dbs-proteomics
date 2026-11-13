@@ -1,0 +1,7 @@
+"statistic","value"
+"complete_case_proteins",3311
+"ACTB_linear_CV",0.27
+"ACTB_log2_range",2.43
+"ACTB_fold_range",5.4
+"KruskalWallis_P_groups",0.15
+"KruskalWallis_P_runs",5.5e-05

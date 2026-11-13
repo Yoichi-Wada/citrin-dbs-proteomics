@@ -1,0 +1,35 @@
+CITRIN 10-member full-training frozen ensemble: model reproducibility audit
+Project root: <repository>
+Output folder: <repository>/02_final_model/results/FinalModel_reproducibility_rerun
+Frozen model path: <repository>/02_final_model/FinalModel_reproducibility/final_training_model_FROZEN_NOT_VALIDATED.rds
+Frozen RDS MD5: b13da448e0c52f95fdea291ada6b9e03
+Model version: citrin_nested_ensemble_familyLOFO_1.1
+Engine version: two_run_fixed_panel_2.2
+Fit mode: no_combat
+The frozen RDS is trained on 44 non-SS specimens (7 LoF/Mis, 37 negatives) from Run2 and Run3.
+The output is a FINAL FULL-DATA TRAINING FIT, NOT an independently validated external model.
+Original submitted refit: 30 candidates/15 nonzero coefficients; DIFFERENT from revised 10-member ensemble.
+Consensus30: shared list of 30 UniProt features; each of ten members has its own fitted glmnet model.
+Diverse30: each member uses its own 30 proteins; optional post-hoc comparator.
+Scores are the MEAN of 10 member probabilities, NOT the sigmoid of mean coefficients.
+One member: raw intensity -> exclude nonpositive -> log2(protein/ACTB P60709).
+Protein universe at input: >=3 unique peptides, 5,199 candidates; sample 1% quantile based on ALL eligible observed proteins.
+Test MinProb: set.seed(member_seed_hash+4), for each missing eligible feature draw N(sample q01, frozen training minprob_sigma^2).
+The hash is v2.2 family_seed('fit|FINAL_ALL44/fit|member_seed',salt=11111); base seed 2025.
+A specimen is scored alone so each example's random draws do not depend on other example rows or order.
+When combat_mean, subtract saved protein- and batch-specific FROZEN shifts before member center/scale.
+ComBat frozen mean shifts are available only for observed training batches Run2 and Run3; Run1 cannot be scored under frozen ComBat.
+For each member, standardized z_j = (post_batch_log2_ratio_j - mu_j) / sd_j.
+Member logit eta_k = intercept_k + sum_{j in member panel}(beta_jk * z_jk).
+Member probability p_k = 1/(1+exp(-eta_k)). Ensemble probability = mean_k(p_k).
+The primary fixed cutoff is full_threshold from the 44-subject training's INNER family-LOFO predictions.
+The secondary cutoff is spec90_threshold; neither is re-estimated using the worked example.
+The final-training thresholds are DIFFERENT from outer-fold thresholds used to evaluate 44 OOF subjects.
+SM_1 and WS_1 are in the 44-subject TRAINING COHORT. Example scores are IN-SAMPLE calculation demonstrations.
+Do not report scoring_example_ensemble_summary.csv as model accuracy or cross-validated predictions.
+Missing-value draws are stochastic under the original pipeline; identical reruns require identical R RNG, raw feature order and seed.
+Manual-vs-glmnet max absolute discrepancy: 2.22044604925e-16
+All exported feature contributions were re-read and recalculated from their CSVs; checks passed.
+R: R version 4.5.2 (2025-10-31)
+glmnet: 4.1.10
+openxlsx: 4.2.8.1
