@@ -155,7 +155,8 @@ outputs are distributed), the fragment-XIC extraction (needs the raw files from 
 ## License
 
 Code: MIT License (see `LICENSE`). Processed data and tables: CC BY 4.0. Please cite the manuscript and the Zenodo
-archive of this repository (DOI to be inserted at release).
+archive of this repository: https://doi.org/10.5281/zenodo.24525634 (all versions; version 1.0.0:
+https://doi.org/10.5281/zenodo.24525635).
 
 ## Contact
 
