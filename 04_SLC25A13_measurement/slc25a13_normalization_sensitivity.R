@@ -102,8 +102,8 @@ glab <- c(DD = "Disease control", WW = "Healthy", WS = "Carrier", SM = "LoF/Mis"
 stab$Group <- factor(glab[as.character(stab$group)], levels = glab)
 pal <- c(Run1 = "#56B4E9", Run2 = "#E69F00", Run3 = "#0072B2")
 p1 <- ggplot(stab, aes(Group, ACTB_log2)) + geom_boxplot(outlier.shape = NA, width = .6, colour = "grey40") +
-  geom_jitter(aes(colour = batch), width = .15, size = 1.6) + scale_colour_manual(values = pal, name = "Batch") +
-  labs(y = expression(log[2]~"ACTB raw intensity"), x = NULL, title = "A  ACTB raw intensity by group and batch") +
+  geom_jitter(aes(colour = batch), width = .15, size = 1.6) + scale_colour_manual(values = pal, name = "Analytical run") +
+  labs(y = expression(log[2]~"ACTB intensity"), x = NULL, title = "A  ACTB intensity by group and analytical run") +
   theme_classic(base_size = 10) + theme(legend.position = "top")
 p2 <- ggplot(stab, aes(Group, ACTB_minus_median)) +
   geom_boxplot(outlier.shape = NA, width = .6, colour = "grey40") + geom_jitter(aes(colour = batch), width = .15, size = 1.6) +
@@ -116,8 +116,8 @@ ctrl_med <- aggregate(value ~ normalisation, long[long$group %in% c("DD","WW"), 
 long <- merge(long, setNames(ctrl_med, c("normalisation","ctrl")), by = "normalisation"); long$rel <- 2^(long$value - long$ctrl)
 p3 <- ggplot(long, aes(Group, rel)) + geom_hline(yintercept = 1, linetype = 2, colour = "grey60") +
   geom_boxplot(outlier.shape = NA, width = .6, colour = "grey40") + geom_jitter(width = .15, size = 1.2, alpha = .8) +
-  facet_wrap(~ normalisation, nrow = 1) + scale_y_log10(breaks = c(0.1, 0.2, 0.3, 0.5, 1, 2), labels = c("0.1", "0.2", "0.3", "0.5", "1", "2")) +
-  labs(y = "SLC25A13 relative to pooled control median", x = NULL, title = "C  SLC25A13 under five normalisation strategies (LoF/LoF: not quantified under any)") +
+  facet_wrap(~ normalisation, nrow = 1, labeller = labeller(normalisation = function(x) ifelse(x == "None (raw log2)", "DIA-NN cross-run\nnormalization alone", x))) + scale_y_log10(breaks = c(0.1, 0.2, 0.3, 0.5, 1, 2), labels = c("0.1", "0.2", "0.3", "0.5", "1", "2")) +
+  labs(y = "SLC25A13 relative to pooled control median", x = NULL, title = "C  SLC25A13 under five normalization strategies (LoF/LoF: not quantified under any)") +
   theme_classic(base_size = 10) + theme(axis.text.x = element_text(angle = 45, hjust = 1))
 # ---- Panel D (added 2026-11-06): quantified protein groups per specimen, by group and batch ----
 # Counts over the 7,474 protein groups reported by DIA-NN (as cited in the Response); counts within the
@@ -130,7 +130,7 @@ p4 <- ggplot(qc, aes(Group, n_quantified_7474)) + geom_boxplot(outlier.shape = N
   geom_jitter(aes(colour = batch), width = .15, size = 1.6) + scale_colour_manual(values = pal, guide = "none") +
   scale_y_continuous(labels = function(x) format(x, big.mark = ",")) +
   labs(y = "Quantified protein groups per specimen", x = NULL,
-       title = "D  Quantified protein groups per specimen by group and batch (of 7,474 reported)") +
+       title = "D  Quantified protein groups per specimen by group and analytical run (of 7,474 reported)") +
   theme_classic(base_size = 10)
 pdf(file.path(out, "FigureS1_ACTB_stability_and_SLC25A13_normalisation.pdf"), width = 11, height = 12, useDingbats = FALSE)
 grid::grid.newpage(); lay <- grid::grid.layout(3, 2, heights = grid::unit(c(1, 1.15, 1), "null"))

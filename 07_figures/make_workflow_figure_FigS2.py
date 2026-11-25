@@ -74,7 +74,7 @@ yb = box(xl, y, wl, "Specimens and proteomic data", [
     "patients); 6 healthy adults; 21 disease controls; 3 analytical runs",
     "DIA-NN 2.2.0 (1 % FDR, cross-run normalization): 7,474 protein groups → 5,199 with ≥ 3 unique",
     "peptides (technical filter, applied once, not cross-validated)",
-    "Zero = not quantified; quantified values log2-transformed and ACTB-centred per specimen (Stage 2)"], "data")
+    "Zero = not quantified; quantified values log2-transformed and ACTB-centered per specimen (Stage 2)"], "data")
 varrow(xl + wl / 2, yb, yb - GAP); y = yb - GAP
 
 yb = box(xl, y, wl, "Stage 1 — Direct SLC25A13 detection  (Fig. 2)", [
@@ -107,7 +107,7 @@ yb = box(xl, y, wl, "Sensitivity and reference analyses (Tables S10, S13–S15)"
     "**Nested refitting (single models, 10 seeds):  panel size chosen in the inner loop (5–50);",
     "training-only mean-only batch adjustment; Run 3 only (n = 35); family-level subsampling;",
     "ensemble re-run after excluding PRL, MTTP, ARHGEF10 and SEC31A, individually and jointly",
-    "**Post hoc, from saved out-of-fold predictions:  LoF/Mis vs carriers / disease controls /",
+    "**From saved out-of-fold predictions:  LoF/Mis vs carriers / disease controls /",
     "age-restricted controls; family-level performance; selection recurrence over 35 panels",
     "**Reference:  100 family-structured label permutations of the complete score-generation",
     "procedure of the primary ensemble (inner threshold calibration omitted); P = (b + 1)/(N + 1)"], "report")
@@ -117,7 +117,7 @@ yb = box(xl, y, wl, "Frozen research ensemble — trained once on all 44 develop
     "One 30-protein consensus panel; 10 coefficient vectors + intercepts; member-specific",
     "preprocessing constants and imputation seeds; training-derived thresholds 0.034 / 0.210",
     "Not independently validated; not evaluated on the 44 development specimens;",
-    "application to the 16 LoF/LoF (parents among the 44) is descriptive",
+    "application to the 16 LoF/LoF (parents of six among the 44) is descriptive",
     "Specification: Table S17 (machine-readable with the analysis code); LoF/LoF application: Table S18"], "final")
 y_left_bottom = yb
 
@@ -150,7 +150,7 @@ yb = box(xii, y_in, wii, "Inner held-out family  →  inner out-of-fold scores",
 varrow(xii + wii / 2, yb, yb - GAP); y_in = yb - GAP
 yb = box(xii, y_in, wii, "(vii)  Calibration on the inner out-of-fold scores", [
     "primary threshold: minimum inner score among positive specimens",
-    "secondary threshold: max. inner sensitivity s.t. specificity ≥ 0.90 (ties: fewer FP, lower τ)",
+    "specificity-constrained threshold: max. inner sensitivity s.t. specificity ≥ 0.90 (ties: fewer FP, lower τ)",
     "adaptive strategy: consensus or diverse panel, whichever has fewer inner FP at the",
     "   primary threshold (ties: inner AUC, then consensus)"], "train")
 inner_bottom = yb - 0.2
@@ -166,8 +166,8 @@ outer_bottom = yb - pad
 frame(xr, outer_top, wr, outer_top - outer_bottom, "Outer loop  (35 iterations, one per family)", ec="#3C7A3A", fc="#FAFCF9")
 
 yb2 = box(xr, outer_bottom - GAP, wr, "Ensemble strategies  (fixed before the final run)", [
-    "primary: consensus panel;  secondary \"diverse\": each member keeps its own top 30;",
-    "secondary \"adaptive\": chosen per fold in the inner loop (vii)"], "data")
+    "primary: consensus panel;  alternative \"diverse\": each member keeps its own top 30;",
+    "alternative \"adaptive\": chosen per fold in the inner loop (vii)"], "data")
 
 harrow(xl + wl, xr - 0.05, (y_s2_top + y_s2_bot) / 2)
 

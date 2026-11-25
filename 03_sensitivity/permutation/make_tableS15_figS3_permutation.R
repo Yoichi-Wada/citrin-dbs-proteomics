@@ -23,7 +23,7 @@ title <- "Table S15. Label-permutation reference distribution for the out-of-fol
 writeData(wb, "Table S15", title, startRow = 1, startCol = 1)
 hdr <- data.frame(Permutation = sprintf("perm_%03d", null$perm_id),
   `Consensus-30 out-of-fold AUC (primary statistic)` = round(null$consensus30_AUC, 4),
-  `Diverse-30 out-of-fold AUC (auxiliary)` = round(null$diverse30_AUC, 4),
+  `Diverse-30 out-of-fold AUC (alternative)` = round(null$diverse30_AUC, 4),
   `Consensus-30 family-level AUC (descriptive)` = round(null$consensus30_family_AUC, 4),
   `Permuted positive specimens coinciding with true LoF/Mis specimens (n of 7)` = null$n_true_SM_relabelled_positive, check.names = FALSE)
 writeData(wb, "Table S15", hdr, startRow = 3, startCol = 1)
@@ -31,7 +31,7 @@ r <- 3 + nrow(hdr) + 2
 notes <- c(
   sprintf("Observed values (original labels): consensus-30 AUC %.3f; diverse-30 AUC %.3f; consensus-30 family-level AUC 0.773.", obs["consensus30"], obs["diverse30"]),
   sprintf("Consensus-30 (primary, pre-specified): null median %.3f, interquartile range %.3f–%.3f, 2.5th–97.5th percentiles %.3f–%.3f, maximum %.3f; %d of 100 permutations ≥ observed; one-sided P = (%d + 1)/(100 + 1) = %.3f (Monte Carlo resolution 0.01).", sc["median"], sc["q25"], sc["q75"], sc["q025"], sc["q975"], sc["max"], b_c, b_c, (b_c + 1) / 101),
-  sprintf("Diverse-30 (auxiliary, not the pre-specified statistic): null median %.3f, 2.5th–97.5th percentiles %.3f–%.3f, maximum %.3f; %d of 100 ≥ observed; P = %.3f.", sd_["median"], sd_["q025"], sd_["q975"], sd_["max"], b_d, (b_d + 1) / 101),
+  sprintf("Diverse-30 (alternative; not the statistic specified in advance): null median %.3f, 2.5th–97.5th percentiles %.3f–%.3f, maximum %.3f; %d of 100 ≥ observed; P = %.3f.", sd_["median"], sd_["q025"], sd_["q975"], sd_["max"], b_d, (b_d + 1) / 101),
   sprintf("Consensus-30 family-level AUC (descriptive, not pre-specified): null median %.3f, 2.5th–97.5th percentiles %.3f–%.3f; %d of 100 ≥ observed 0.773; P = %.3f.", sf["median"], sf["q025"], sf["q975"], b_f, (b_f + 1) / 101),
   "Design (fixed on 2026-11-07 before any permutation result was inspected): in each permutation the seven positive labels were assigned to five randomly chosen Run 3 families of sizes 1, 1, 1, 2 and 2 (measurements, family map and run composition unchanged), and the complete outer family-grouped procedure (training-partition imputation, stability selection with ten members, consensus-30 panel, standardization, λ tuning, elastic-net fitting, averaging of member probabilities) was repeated in every outer fold. The inner leave-one-family-out calibration, used only for decision thresholds and the adaptive choice, was omitted; on the original labels this omission reproduced the 44 out-of-fold probabilities of the primary analysis exactly (maximum absolute difference 0). The number of permutations (100) was fixed in advance; P = (b + 1)/(N + 1).",
   "The last column gives, for each permutation, how many of the seven permuted positive specimens coincide with true LoF/Mis specimens (0–7); permutations with high overlap are expected to yield higher AUC and are retained because they are part of the pre-specified family-structured null.",
@@ -42,8 +42,8 @@ saveWorkbook(wb, file.path(O, "TableS15_permutation_ensemble_AUC.xlsx"), overwri
 write.csv(hdr, file.path(O, "TableS15_values.csv"), row.names = FALSE)
 # ---- Fig. S4 ----
 d <- rbind(data.frame(strategy = "Consensus-30 (primary)", AUC = null$consensus30_AUC, obs = obs["consensus30"], b = b_c),
-           data.frame(strategy = "Diverse-30 (auxiliary)", AUC = null$diverse30_AUC, obs = obs["diverse30"], b = b_d))
-lab <- data.frame(strategy = c("Consensus-30 (primary)", "Diverse-30 (auxiliary)"),
+           data.frame(strategy = "Diverse-30 (alternative)", AUC = null$diverse30_AUC, obs = obs["diverse30"], b = b_d))
+lab <- data.frame(strategy = c("Consensus-30 (primary)", "Diverse-30 (alternative)"),
   text = c(sprintf("observed AUC %.3f\n%d/100 permutations ≥ observed\nP = %.3f", obs["consensus30"], b_c, (b_c + 1) / 101),
            sprintf("observed AUC %.3f\n%d/100 permutations ≥ observed\nP = %.3f", obs["diverse30"], b_d, (b_d + 1) / 101)))
 g <- ggplot(d, aes(x = AUC)) +

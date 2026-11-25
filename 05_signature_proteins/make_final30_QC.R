@@ -143,7 +143,7 @@ pC <- ggplot(Cd, aes(y = gene)) +
   geom_text(aes(x = pmax(in_candidate_panel_of_35, 0.5) + 0.6, label = lab), hjust = 0, size = 2.5, colour = "#5B6B7C") +
   scale_fill_manual(values = tier_col, name = "Stability tier", labels = c("A: all 35 folds", "B: 30–34 folds", "C: < 30 folds")) +
   scale_x_continuous(limits = c(0, 62), breaks = seq(0, 35, 5), expand = c(0, 0)) +
-  labs(x = "Outer folds (of 35) in which the protein entered the consensus30 panel",
+  labs(x = "Outer folds (of 35) in which the protein entered the consensus-30 panel",
        y = NULL, title = "C  Selection stability across the 35 family-held-out outer folds") +
   theme_minimal(base_size = 9.5) +
   theme(panel.grid.minor = element_blank(), panel.grid.major.y = element_blank(),

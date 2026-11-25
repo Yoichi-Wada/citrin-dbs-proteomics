@@ -19,7 +19,7 @@ add_family <- function(df) { if (!"family_id" %in% names(df)) { fm <- read.csv(f
 #             (LoF/LoF 0/16 vs 44/44) and Wilcoxon rank-sum tests on quantified values; P = 0.27 for LoF/Mis vs
 #             carriers is reported with the ratio and CI, not as evidence of similarity.
 #  - R4 Mj4 : "not detected by the current DBS DIA workflow" wording (no claim of biological absence).
-#  - R4 Mn e: standardised group labels with genotype and n; internal codes (RefRef_CT, LoFMS...) removed.
+#  - R4 Mn e: standardised group labels; internal codes (RefRef_CT, LoFMS...) removed.
 #  - R2 Mj4 / R4 Mj2: analytical run can be encoded as point shape (SHOW_BATCH_SHAPE); off by default to keep the
 #             submitted point design (batch x group is given in the Supplement).
 #
@@ -50,8 +50,7 @@ actb <- getrow(ACTB_ACC); slc <- getrow(SLC25A13_ACC)
 stopifnot(all(is.finite(actb) & actb > 0))
 slc[!is.finite(slc)] <- 0
 
-GROUP_LAB <- c(DD = "Disease control\n(Ref/Ref)", WW = "Healthy adult\n(Ref/Ref)", WS = "Carrier\n(Ref/LoF)",
-               SM = "LoF/Mis", SS = "LoF/LoF")
+GROUP_LAB <- c(DD = "Disease controls", WW = "Healthy controls", WS = "Carriers", SM = "LoF/Mis", SS = "LoF/LoF")
 GROUP_ORDER <- c("WW", "WS", "SS", "SM", "DD")   # x-axis order as in the submitted Fig. 2A (RefRef_CT, RefLoF, LoFLoF, LoFMS, RefRef_DD)
 df <- data.frame(SampleID = si$SampleID, group = si$group, batch = si$batch,
                  SLC25A13_raw = slc, ACTB_raw = actb,
@@ -104,13 +103,11 @@ write.csv(stats, file.path(OUT, "group_statistics.csv"), row.names = FALSE)
 write.csv(medtab, file.path(OUT, "group_medians.csv"), row.names = FALSE)
 
 # ---- figure ----------------------------------------------------------------------------------------
-# Point design follows the submitted Fig. 2A (Analysis_full_20260313.R): ggplot2 default hue palette assigned in the
-# original group order RefRef_CT (WW), RefLoF (WS), LoFLoF (SS), LoFMS (SM), RefRef_DD (DD); filled circles with a dark
-# outline, alpha 0.7, jitter width 0.18 (seed 1). Analytical run is NOT encoded in this panel (batch x group is tabulated
-# in the Supplement); set SHOW_BATCH_SHAPE <- TRUE to encode it as point shape instead.
+# Point design: filled circles with a dark outline, alpha 0.7, jitter width 0.18 (seed 1); group colours as in Fig. S7.
+# Analytical run is NOT encoded in this panel (batch x group is tabulated in the Supplement); set SHOW_BATCH_SHAPE <- TRUE
+# to encode it as point shape instead.
 SHOW_BATCH_SHAPE <- FALSE
-hue5 <- scales::hue_pal()(5)                      # "#F8766D" "#A3A500" "#00BF7D" "#00B0F6" "#E76BF3"
-pal <- c(WW = hue5[1], WS = hue5[2], SS = hue5[3], SM = hue5[4], DD = hue5[5])
+pal <- c(WW = "#FF725C", WS = "#EFB118", SS = "#6CC5B0", SM = "#97BBF5", DD = "#FF8AB7")
 fmtP <- function(p) if (p < 1e-4) sprintf("P = %.1e", p) else sprintf("P = %.2f", p)
 fmtR <- function(x) sprintf("%.2f (%.2f–%.2f)", x["ratio"], x["lo"], x["hi"])
 ymax <- max(df$ratio) * SCALE
@@ -141,7 +138,7 @@ p <- ggplot(df, aes(x = group_f, y = ratio * SCALE)) +
   scale_fill_manual(values = pal, guide = "none") +
   { if (SHOW_BATCH_SHAPE) scale_shape_manual(values = c(Run1 = 24, Run2 = 22, Run3 = 21), name = "Analytical run") } +
   scale_y_continuous(limits = c(-0.1, ymax * 1.22), breaks = seq(0, 6, 1), expand = c(0, 0)) +
-  labs(x = NULL, y = expression("SLC25A13 / ACTB intensity ratio (" %*% 10^-4 * ")"),
+  labs(x = NULL, y = expression("SLC25A13/ACTB intensity ratio (" %*% 10^-4 * ")"),
        title = "SLC25A13 protein relative to ACTB in dried blood spots",
        subtitle = "Points: specimens (raw DIA-NN intensities, no imputation). Bars: median and interquartile range of quantified specimens.") +
   guides(shape = if (SHOW_BATCH_SHAPE) guide_legend(override.aes = list(fill = "grey60")) else "none") +
@@ -152,17 +149,31 @@ p <- ggplot(df, aes(x = group_f, y = ratio * SCALE)) +
 ggsave(file.path(OUT, "Figure2A_SLC25A13_ACTB_by_group.pdf"), p, width = 8.2, height = 5.6, device = cairo_pdf)
 ggsave(file.path(OUT, "Figure2A_SLC25A13_ACTB_by_group.png"), p, width = 8.2, height = 5.6, dpi = 300, bg = "white")
 
-# ---- portrait version (width:height = 350:400) for the main figure panel; no title/subtitle, shorter annotations ----
-lab_df2 <- lab_df
-lab_df2$label <- c(paste0("vs controls\n", fmtR(ws), "\n", fmtP(p_ws)),
-                   paste0("vs controls\n", fmtR(sm), "\n", fmtP(p_sm), "\nvs carriers\n", fmtR(smws), ", ", fmtP(p_smws)),
-                   paste0("not detected\n0/16 (others 44/44)\nFisher ", fmtP(p_fisher)))
-lab_df2$y <- ymax * c(1.12, 1.14, 0.42)
-p2 <- p + labs(title = NULL, subtitle = NULL)
-p2$layers <- p2$layers[!vapply(p2$layers, function(l) inherits(l$geom, "GeomText"), logical(1))]   # drop the long annotation layer and re-add the short one
-p2 <- p2 + geom_text(data = lab_df2, aes(x = group_f, y = y, label = label), size = 2.3, colour = "#17212B", lineheight = 0.92) +
-  scale_y_continuous(limits = c(-0.1, ymax * 1.30), breaks = seq(0, 6, 1), expand = c(0, 0)) +
-  theme(axis.text.x = element_text(size = 7.5), axis.title.y = element_text(size = 9))
+# ---- portrait version (width:height = 350:400) = main-figure panel (Fig. 2A): group names only, LoF/LoF and LoF/Mis
+#      bracketed as citrin deficiency, no title and no statistics in the plot (they are in group_statistics.csv and the legend) ----
+LAB_PANEL <- c(WW = "Healthy\ncontrols", WS = "Carriers", SS = "LoF/LoF", SM = "LoF/Mis", DD = "Disease\ncontrols")
+df$group_p <- factor(df$group, levels = GROUP_ORDER, labels = LAB_PANEL[GROUP_ORDER])
+qdf <- df[df$quantified, ]
+xb <- match(c("SS", "SM"), GROUP_ORDER)            # bracket under the two citrin-deficiency groups
+set.seed(1)
+p2 <- ggplot(df, aes(x = group_p, y = ratio * SCALE)) +
+  geom_hline(yintercept = 0, colour = "grey80", linewidth = 0.4) +
+  stat_summary(data = qdf, fun.min = function(z) quantile(z, .25), fun.max = function(z) quantile(z, .75), fun = median,
+               geom = "linerange", linewidth = 0.6, colour = "black") +
+  stat_summary(data = qdf, fun = median, geom = "crossbar", width = 0.5, linewidth = 0.5, colour = "black") +
+  geom_point(aes(fill = group), shape = 21, position = position_jitter(width = 0.18, height = 0, seed = 1),
+             size = 3, stroke = 0.6, colour = "black", alpha = 0.7) +
+  annotate("segment", x = xb[1] - 0.4, xend = xb[2] + 0.4, y = -0.46, yend = -0.46, linewidth = 0.4, colour = "black") +
+  annotate("text", x = mean(xb), y = -0.52, label = "Citrin deficiency", size = 7.5 / .pt, vjust = 1, colour = "black") +
+  scale_x_discrete(limits = levels(df$group_p)) +
+  scale_fill_manual(values = pal, guide = "none") +
+  scale_y_continuous(breaks = 0:6, labels = function(b) ifelse(b %% 2 == 0, b, ""), expand = c(0, 0)) +
+  coord_cartesian(ylim = c(-0.1, ymax * 1.20), clip = "off") +   # limits on the coordinate system: the bracket is drawn below the panel
+  labs(x = NULL, y = expression("SLC25A13/ACTB intensity ratio (" %*% 10^-4 * ")")) +
+  theme_minimal(base_size = 10) +
+  theme(panel.grid.minor = element_blank(), panel.grid.major.x = element_blank(), legend.position = "none",
+        axis.text = element_text(colour = "black"), axis.text.x = element_text(size = 7.5, lineheight = 0.95),
+        axis.title.y = element_text(size = 9), plot.margin = margin(8, 8, 22, 8))
 ggsave(file.path(OUT, "Figure2A_SLC25A13_ACTB_by_group_portrait.pdf"), p2, width = 5.25, height = 6.0, device = cairo_pdf)
 ggsave(file.path(OUT, "Figure2A_SLC25A13_ACTB_by_group_portrait.png"), p2, width = 5.25, height = 6.0, dpi = 300, bg = "white")
 
@@ -174,7 +185,7 @@ leg <- sprintf(paste(
   "these specimens are shown at zero and were excluded from the ratio statistics. Relative to the pooled controls (disease controls and healthy adults, n = 27),",
   "the median SLC25A13/ACTB ratio was %.2f (bootstrap 95%% CI %.2f–%.2f; Wilcoxon rank-sum P = %.1e) in carriers and %.2f (%.2f–%.2f; P = %.1e) in LoF/Mis individuals;",
   "the LoF/Mis to carrier ratio was %.2f (%.2f–%.2f; P = %.2f). Disease controls and healthy adults did not differ (P = %.2f). Group medians (x 10^-4): disease controls %.2f, healthy adults %.2f, carriers %.2f, LoF/Mis %.2f.",
-  "Ref/Ref, no SLC25A13 variant detected; LoF, loss-of-function variant; Mis, missense variant. n: disease controls 21, healthy adults 6, carriers 10, LoF/Mis 7, LoF/LoF 16."),
+  "LoF, loss-of-function variant; Mis, missense variant. n: disease controls 21, healthy adults 6, carriers 10, LoF/Mis 7, LoF/LoF 16."),
   p_fisher, ws["ratio"], ws["lo"], ws["hi"], p_ws, sm["ratio"], sm["lo"], sm["hi"], p_sm, smws["ratio"], smws["lo"], smws["hi"], p_smws, p_ddww,
   med["DD"] * SCALE, med["WW"] * SCALE, med["WS"] * SCALE, med["SM"] * SCALE)
 writeLines(leg, file.path(OUT, "legend_draft.txt"))

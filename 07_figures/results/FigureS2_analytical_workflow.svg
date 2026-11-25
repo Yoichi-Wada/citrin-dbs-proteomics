@@ -6,11 +6,11 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-10T11:57:53.891939</dc:date>
+    <dc:date>2026-11-25T10:16:10.782233</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.0, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -40,7 +40,7 @@ Q 464.4 70.56 464.4 77.76
 L 464.4 590.4 
 Q 464.4 597.6 471.6 597.6 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #fafcf9; stroke: #3c7a3a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #fafcf9; stroke: #3c7a3a; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 483.12 507.6 
@@ -53,107 +53,107 @@ Q 475.92 272.16 475.92 279.36
 L 475.92 500.4 
 Q 475.92 507.6 483.12 507.6 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #e6f0fa; stroke-dasharray: 10,5; stroke-dashoffset: 0; stroke: #2f6da8; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #e6f0fa; stroke-dasharray: 10,5; stroke-dashoffset: 0; stroke: #2f6da8; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 237.24 164.723906 
 Q 237.24 171.360578 237.24 176.879216 
-" clip-path="url(#pa8f44d756c)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
     <path d="M 239.44 172.479216 
 L 237.24 176.879216 
 L 235.04 172.479216 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
    </g>
    <g id="patch_5">
     <path d="M 237.24 284.243906 
 Q 237.24 290.880578 237.24 296.399216 
-" clip-path="url(#pa8f44d756c)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
     <path d="M 239.44 291.999216 
 L 237.24 296.399216 
 L 235.04 291.999216 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
    </g>
    <g id="patch_6">
     <path d="M 237.24 390.083906 
 Q 237.24 396.720578 237.24 402.239216 
-" clip-path="url(#pa8f44d756c)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
     <path d="M 239.44 397.839216 
 L 237.24 402.239216 
 L 235.04 397.839216 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
    </g>
    <g id="patch_7">
     <path d="M 237.24 536.963906 
 Q 237.24 543.600578 237.24 549.119216 
-" clip-path="url(#pa8f44d756c)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
     <path d="M 239.44 544.719216 
 L 237.24 549.119216 
 L 235.04 544.719216 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
    </g>
    <g id="patch_8">
     <path d="M 237.24 683.843906 
 Q 237.24 690.480578 237.24 695.999216 
-" clip-path="url(#pa8f44d756c)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
     <path d="M 239.44 691.599216 
 L 237.24 695.999216 
 L 235.04 691.599216 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
    </g>
    <g id="patch_9">
     <path d="M 701.64 258.323906 
 Q 701.64 264.960578 701.64 270.479216 
-" clip-path="url(#pa8f44d756c)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
     <path d="M 703.84 266.079216 
 L 701.64 270.479216 
 L 699.44 266.079216 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
    </g>
    <g id="patch_10">
     <path d="M 701.64 336.803906 
 Q 701.64 343.440578 701.64 348.959216 
-" clip-path="url(#pa8f44d756c)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
     <path d="M 703.84 344.559216 
 L 701.64 348.959216 
 L 699.44 344.559216 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
    </g>
    <g id="patch_11">
     <path d="M 701.64 387.923906 
 Q 701.64 394.560578 701.64 400.079216 
-" clip-path="url(#pa8f44d756c)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
     <path d="M 703.84 395.679216 
 L 701.64 400.079216 
 L 699.44 395.679216 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
    </g>
    <g id="patch_12">
     <path d="M 701.64 508.163906 
 Q 701.64 514.800578 701.64 520.319216 
-" clip-path="url(#pa8f44d756c)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
     <path d="M 703.84 515.919216 
 L 701.64 520.319216 
 L 699.44 515.919216 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
    </g>
    <g id="patch_13">
     <path d="M 446.239512 343.8 
 Q 453.241679 343.8 459.125811 343.8 
-" clip-path="url(#pa8f44d756c)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: none; stroke: #404040; stroke-linecap: round"/>
     <path d="M 454.725811 341.6 
 L 459.125811 343.8 
 L 454.725811 346 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #404040; stroke: #404040; stroke-linecap: round"/>
    </g>
    <g id="patch_14">
     <path d="M 31.68 838.8 
@@ -166,7 +166,7 @@ Q 29.52 824.4 29.52 826.56
 L 29.52 836.64 
 Q 29.52 838.8 31.68 838.8 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #ececec; stroke: #7f7f7f; stroke-linejoin: miter"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #ececec; stroke: #7f7f7f; stroke-linejoin: miter"/>
    </g>
    <g id="patch_15">
     <path d="M 218.88 838.8 
@@ -179,7 +179,7 @@ Q 216.72 824.4 216.72 826.56
 L 216.72 836.64 
 Q 216.72 838.8 218.88 838.8 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #ddeeda; stroke: #3c7a3a; stroke-linejoin: miter"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #ddeeda; stroke: #3c7a3a; stroke-linejoin: miter"/>
    </g>
    <g id="patch_16">
     <path d="M 442.08 838.8 
@@ -192,7 +192,7 @@ Q 439.92 824.4 439.92 826.56
 L 439.92 836.64 
 Q 439.92 838.8 442.08 838.8 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #fff4d6; stroke: #b8860b; stroke-linejoin: miter"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #fff4d6; stroke: #b8860b; stroke-linejoin: miter"/>
    </g>
    <g id="patch_17">
     <path d="M 629.28 838.8 
@@ -205,7 +205,7 @@ Q 627.12 824.4 627.12 826.56
 L 627.12 836.64 
 Q 627.12 838.8 629.28 838.8 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #dce6f1; stroke: #376092; stroke-linejoin: miter"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #dce6f1; stroke: #376092; stroke-linejoin: miter"/>
    </g>
    <g id="patch_18">
     <path d="M 816.48 838.8 
@@ -218,7 +218,7 @@ Q 814.32 824.4 814.32 826.56
 L 814.32 836.64 
 Q 814.32 838.8 816.48 838.8 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #efe3f3; stroke: #7b4f9d; stroke-linejoin: miter"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #efe3f3; stroke: #7b4f9d; stroke-linejoin: miter"/>
    </g>
    <g id="patch_19">
     <path d="M 34.56 164.16 
@@ -231,7 +231,7 @@ Q 28.8 59.04 28.8 64.8
 L 28.8 158.4 
 Q 28.8 164.16 34.56 164.16 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #ececec; stroke: #7f7f7f; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #ececec; stroke: #7f7f7f; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_20">
     <path d="M 34.56 283.68 
@@ -244,7 +244,7 @@ Q 28.8 178.56 28.8 184.32
 L 28.8 277.92 
 Q 28.8 283.68 34.56 283.68 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #ececec; stroke: #7f7f7f; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #ececec; stroke: #7f7f7f; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_21">
     <path d="M 34.56 389.52 
@@ -257,7 +257,7 @@ Q 28.8 298.08 28.8 303.84
 L 28.8 383.76 
 Q 28.8 389.52 34.56 389.52 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #ddeeda; stroke: #3c7a3a; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #ddeeda; stroke: #3c7a3a; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_22">
     <path d="M 34.56 536.4 
@@ -270,7 +270,7 @@ Q 28.8 403.92 28.8 409.68
 L 28.8 530.64 
 Q 28.8 536.4 34.56 536.4 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #dce6f1; stroke: #376092; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #dce6f1; stroke: #376092; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_23">
     <path d="M 34.56 683.28 
@@ -283,7 +283,7 @@ Q 28.8 550.8 28.8 556.56
 L 28.8 677.52 
 Q 28.8 683.28 34.56 683.28 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #dce6f1; stroke: #376092; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #dce6f1; stroke: #376092; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_24">
     <path d="M 34.56 802.8 
@@ -296,7 +296,7 @@ Q 28.8 697.68 28.8 703.44
 L 28.8 797.04 
 Q 28.8 802.8 34.56 802.8 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #efe3f3; stroke: #7b4f9d; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #efe3f3; stroke: #7b4f9d; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_25">
     <path d="M 481.68 257.76 
@@ -309,7 +309,7 @@ Q 475.92 97.92 475.92 103.68
 L 475.92 252 
 Q 475.92 257.76 481.68 257.76 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #ddeeda; stroke: #3c7a3a; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #ddeeda; stroke: #3c7a3a; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_26">
     <path d="M 500.4 336.24 
@@ -322,7 +322,7 @@ Q 494.64 299.52 494.64 305.28
 L 494.64 330.48 
 Q 494.64 336.24 500.4 336.24 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #ddeeda; stroke: #3c7a3a; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #ddeeda; stroke: #3c7a3a; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_27">
     <path d="M 500.4 387.36 
@@ -335,7 +335,7 @@ Q 494.64 350.64 494.64 356.4
 L 494.64 381.6 
 Q 494.64 387.36 500.4 387.36 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #ddeeda; stroke: #3c7a3a; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #ddeeda; stroke: #3c7a3a; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_28">
     <path d="M 500.4 493.2 
@@ -348,7 +348,7 @@ Q 494.64 401.76 494.64 407.52
 L 494.64 487.44 
 Q 494.64 493.2 500.4 493.2 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #ddeeda; stroke: #3c7a3a; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #ddeeda; stroke: #3c7a3a; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_29">
     <path d="M 481.68 586.08 
@@ -361,7 +361,7 @@ Q 475.92 522 475.92 527.76
 L 475.92 580.32 
 Q 475.92 586.08 481.68 586.08 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #fff4d6; stroke: #b8860b; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #fff4d6; stroke: #b8860b; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_30">
     <path d="M 470.16 676.08 
@@ -374,223 +374,223 @@ Q 464.4 612 464.4 617.76
 L 464.4 670.32 
 Q 464.4 676.08 470.16 676.08 
 z
-" clip-path="url(#pa8f44d756c)" style="fill: #ececec; stroke: #7f7f7f; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#pfbf4e68b2b)" style="fill: #ececec; stroke: #7f7f7f; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
-    <text style="font-weight: 700; font-size: 10.2px; font-family: 'Arial'; text-anchor: start" x="30.24" y="32.879549" transform="rotate(-0 30.24 32.879549)">Analytical workflow for SLC25A13 detection and nested family-grouped evaluation of an exploratory LoF/Mis classifier</text>
+    <text style="font-weight: 700; font-size: 10.2px; font-family: 'Arial'; text-anchor: start" x="30.24" y="32.87925" transform="rotate(-0 30.24 32.87925)">Analytical workflow for SLC25A13 detection and nested family-grouped evaluation of an exploratory LoF/Mis classifier</text>
    </g>
    <g id="text_2">
-    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="38.88" y="83.455986" transform="rotate(-0 38.88 83.455986)">Specimens and proteomic data</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="38.88" y="83.512087" transform="rotate(-0 38.88 83.512087)">Specimens and proteomic data</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="96.980634" transform="rotate(-0 38.88 96.980634)">60 DBS: 16 LoF/LoF; 7 LoF/Mis (5 families, 2 sibling pairs); 10 carriers (parents of LoF/LoF</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="96.9804" transform="rotate(-0 38.88 96.9804)">60 DBS: 16 LoF/LoF; 7 LoF/Mis (5 families, 2 sibling pairs); 10 carriers (parents of LoF/LoF</text>
    </g>
    <g id="text_4">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="110.660634" transform="rotate(-0 38.88 110.660634)">patients); 6 healthy adults; 21 disease controls; 3 analytical runs</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="110.6604" transform="rotate(-0 38.88 110.6604)">patients); 6 healthy adults; 21 disease controls; 3 analytical runs</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="124.340634" transform="rotate(-0 38.88 124.340634)">DIA-NN 2.2.0 (1 % FDR, cross-run normalization): 7,474 protein groups → 5,199 with ≥ 3 unique</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="124.3404" transform="rotate(-0 38.88 124.3404)">DIA-NN 2.2.0 (1 % FDR, cross-run normalization): 7,474 protein groups → 5,199 with ≥ 3 unique</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="138.020634" transform="rotate(-0 38.88 138.020634)">peptides (technical filter, applied once, not cross-validated)</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="138.0204" transform="rotate(-0 38.88 138.0204)">peptides (technical filter, applied once, not cross-validated)</text>
    </g>
    <g id="text_7">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="151.700634" transform="rotate(-0 38.88 151.700634)">Zero = not quantified; quantified values log2-transformed and ACTB-centred per specimen (Stage 2)</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="151.7004" transform="rotate(-0 38.88 151.7004)">Zero = not quantified; quantified values log2-transformed and ACTB-centered per specimen (Stage 2)</text>
    </g>
    <g id="text_8">
-    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="38.88" y="202.975902" transform="rotate(-0 38.88 202.975902)">Stage 1 — Direct SLC25A13 detection  (Fig. 2)</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="38.88" y="202.97565" transform="rotate(-0 38.88 202.97565)">Stage 1 — Direct SLC25A13 detection  (Fig. 2)</text>
    </g>
    <g id="text_9">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="216.500634" transform="rotate(-0 38.88 216.500634)">Rule: no SLC25A13-assigned precursor passing DIA-NN identification in the raw, non-imputed</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="216.5004" transform="rotate(-0 38.88 216.5004)">Rule: no SLC25A13-assigned precursor passing DIA-NN identification in the raw, non-imputed</text>
    </g>
    <g id="text_10">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="230.180634" transform="rotate(-0 38.88 230.180634)">data (peptides shared with SLC25A12 not counted)</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="230.1804" transform="rotate(-0 38.88 230.1804)">data (peptides shared with SLC25A12 not counted)</text>
    </g>
    <g id="text_11">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="243.862978" transform="rotate(-0 38.88 243.862978)">Observed: not detected in 16/16 LoF/LoF; quantified in 44/44 others — a cohort-level</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="243.909775" transform="rotate(-0 38.88 243.909775)">Observed: not detected in 16/16 LoF/LoF; quantified in 44/44 others — a cohort-level</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="257.540634" transform="rotate(-0 38.88 257.540634)">observation, not an independently validated rule</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="257.49165" transform="rotate(-0 38.88 257.49165)">observation, not an independently validated rule</text>
    </g>
    <g id="text_13">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="271.220634" transform="rotate(-0 38.88 271.220634)">Carriers 0.35×, LoF/Mis 0.28× the median of the 27 non-carrier controls (healthy + disease)</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="271.2204" transform="rotate(-0 38.88 271.2204)">Carriers 0.35×, LoF/Mis 0.28× the median of the 27 non-carrier controls (healthy + disease)</text>
    </g>
    <g id="text_14">
-    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial'; text-anchor: start; fill: #404040" x="244.44" y="292.846723" transform="rotate(-0 244.44 292.846723)">SLC25A13 quantified  →  Stage 2 analysis set</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial'; text-anchor: start; fill: #404040" x="244.44" y="292.8465" transform="rotate(-0 244.44 292.8465)">SLC25A13 quantified  →  Stage 2 analysis set</text>
    </g>
    <g id="text_15">
-    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="38.88" y="322.495902" transform="rotate(-0 38.88 322.495902)">Stage 2 — Exploratory multiprotein classification  (Fig. 3)</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="38.88" y="322.49565" transform="rotate(-0 38.88 322.49565)">Stage 2 — Exploratory multiprotein classification  (Fig. 3)</text>
    </g>
    <g id="text_16">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="336.020634" transform="rotate(-0 38.88 336.020634)">44 specimens, 35 families: 7 LoF/Mis vs 37 controls (carriers, healthy, disease controls);</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="336.0204" transform="rotate(-0 38.88 336.0204)">44 specimens, 35 families: 7 LoF/Mis vs 37 controls (carriers, healthy, disease controls);</text>
    </g>
    <g id="text_17">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="349.700634" transform="rotate(-0 38.88 349.700634)">Run 2 n = 9 (controls only), Run 3 n = 35 (all 7 LoF/Mis)</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="349.7004" transform="rotate(-0 38.88 349.7004)">Run 2 n = 9 (controls only), Run 3 n = 35 (all 7 LoF/Mis)</text>
    </g>
    <g id="text_18">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="363.380634" transform="rotate(-0 38.88 363.380634)">Classifier preprocessing, feature selection, fitting and threshold calibration restricted to</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="363.3804" transform="rotate(-0 38.88 363.3804)">Classifier preprocessing, feature selection, fitting and threshold calibration restricted to</text>
    </g>
    <g id="text_19">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="377.060634" transform="rotate(-0 38.88 377.060634)">each outer training partition (right); panel size 30 fixed, inherited from same-cohort exploration</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="377.0604" transform="rotate(-0 38.88 377.0604)">each outer training partition (right); panel size 30 fixed, inherited from same-cohort exploration</text>
    </g>
    <g id="text_20">
-    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="38.88" y="428.335902" transform="rotate(-0 38.88 428.335902)">Internal out-of-fold evaluation of the model-development procedure (44 specimens, 35 families)</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="38.88" y="428.33565" transform="rotate(-0 38.88 428.33565)">Internal out-of-fold evaluation of the model-development procedure (44 specimens, 35 families)</text>
    </g>
    <g id="text_21">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="441.860634" transform="rotate(-0 38.88 441.860634)">Computed once from the 44 held-out predictions (Table 2, Fig. 3): AUC, sensitivity, specificity,</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="441.8604" transform="rotate(-0 38.88 441.8604)">Computed once from the 44 held-out predictions (Table 2, Fig. 3): AUC, sensitivity, specificity,</text>
    </g>
    <g id="text_22">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="455.540634" transform="rotate(-0 38.88 455.540634)">balanced accuracy, Brier score, positive families detected</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="455.5404" transform="rotate(-0 38.88 455.5404)">balanced accuracy, Brier score, positive families detected</text>
    </g>
    <g id="text_23">
-    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="469.220634" transform="rotate(-0 38.88 469.220634)">Primary consensus-30 ensemble: AUC 0.834 (95 % CI 0.602–0.971), sensitivity 7/7,</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="469.2204" transform="rotate(-0 38.88 469.2204)">Primary consensus-30 ensemble: AUC 0.834 (95 % CI 0.602–0.971), sensitivity 7/7,</text>
    </g>
    <g id="text_24">
-    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="482.900634" transform="rotate(-0 38.88 482.900634)">specificity 31/37, 5/5 families detected</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="482.9004" transform="rotate(-0 38.88 482.9004)">specificity 31/37, 5/5 families detected</text>
    </g>
    <g id="text_25">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="496.580634" transform="rotate(-0 38.88 496.580634)">CI: family-cluster bootstrap of saved predictions (no refitting) or exact binomial (specimen-level)</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="496.5804" transform="rotate(-0 38.88 496.5804)">CI: family-cluster bootstrap of saved predictions (no refitting) or exact binomial (specimen-level)</text>
    </g>
    <g id="text_26">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="510.260634" transform="rotate(-0 38.88 510.260634)">Two-stage evaluation of all 60 (Stage 1 observed, Stage 2 out-of-fold): retrospective, neither</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="510.2604" transform="rotate(-0 38.88 510.2604)">Two-stage evaluation of all 60 (Stage 1 observed, Stage 2 out-of-fold): retrospective, neither</text>
    </g>
    <g id="text_27">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="523.940634" transform="rotate(-0 38.88 523.940634)">stage independently validated (Table S16)</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="523.9404" transform="rotate(-0 38.88 523.9404)">stage independently validated (Table S16)</text>
    </g>
    <g id="text_28">
-    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="38.88" y="575.215902" transform="rotate(-0 38.88 575.215902)">Sensitivity and reference analyses (Tables S10, S13–S15)</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="38.88" y="575.21565" transform="rotate(-0 38.88 575.21565)">Sensitivity and reference analyses (Tables S10, S13–S15)</text>
    </g>
    <g id="text_29">
-    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="588.740634" transform="rotate(-0 38.88 588.740634)">Nested refitting (single models, 10 seeds):  panel size chosen in the inner loop (5–50);</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="588.7404" transform="rotate(-0 38.88 588.7404)">Nested refitting (single models, 10 seeds):  panel size chosen in the inner loop (5–50);</text>
    </g>
    <g id="text_30">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="602.420634" transform="rotate(-0 38.88 602.420634)">training-only mean-only batch adjustment; Run 3 only (n = 35); family-level subsampling;</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="602.4204" transform="rotate(-0 38.88 602.4204)">training-only mean-only batch adjustment; Run 3 only (n = 35); family-level subsampling;</text>
    </g>
    <g id="text_31">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="616.100634" transform="rotate(-0 38.88 616.100634)">ensemble re-run after excluding PRL, MTTP, ARHGEF10 and SEC31A, individually and jointly</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="616.1004" transform="rotate(-0 38.88 616.1004)">ensemble re-run after excluding PRL, MTTP, ARHGEF10 and SEC31A, individually and jointly</text>
    </g>
    <g id="text_32">
-    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="629.780712" transform="rotate(-0 38.88 629.780712)">Post hoc, from saved out-of-fold predictions:  LoF/Mis vs carriers / disease controls /</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="629.8329" transform="rotate(-0 38.88 629.8329)">From saved out-of-fold predictions:  LoF/Mis vs carriers / disease controls /</text>
    </g>
    <g id="text_33">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="643.460634" transform="rotate(-0 38.88 643.460634)">age-restricted controls; family-level performance; selection recurrence over 35 panels</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="643.4604" transform="rotate(-0 38.88 643.4604)">age-restricted controls; family-level performance; selection recurrence over 35 panels</text>
    </g>
    <g id="text_34">
-    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="657.140634" transform="rotate(-0 38.88 657.140634)">Reference:  100 family-structured label permutations of the complete score-generation</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="657.1404" transform="rotate(-0 38.88 657.1404)">Reference:  100 family-structured label permutations of the complete score-generation</text>
    </g>
    <g id="text_35">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="670.820634" transform="rotate(-0 38.88 670.820634)">procedure of the primary ensemble (inner threshold calibration omitted); P = (b + 1)/(N + 1)</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="670.8204" transform="rotate(-0 38.88 670.8204)">procedure of the primary ensemble (inner threshold calibration omitted); P = (b + 1)/(N + 1)</text>
    </g>
    <g id="text_36">
-    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="38.88" y="722.095986" transform="rotate(-0 38.88 722.095986)">Frozen research ensemble — trained once on all 44 development specimens</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="38.88" y="722.112447" transform="rotate(-0 38.88 722.112447)">Frozen research ensemble — trained once on all 44 development specimens</text>
    </g>
    <g id="text_37">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="735.622978" transform="rotate(-0 38.88 735.622978)">One 30-protein consensus panel; 10 coefficient vectors + intercepts; member-specific</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="735.669775" transform="rotate(-0 38.88 735.669775)">One 30-protein consensus panel; 10 coefficient vectors + intercepts; member-specific</text>
    </g>
    <g id="text_38">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="749.300634" transform="rotate(-0 38.88 749.300634)">preprocessing constants and imputation seeds; training-derived thresholds 0.034 / 0.210</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="749.3004" transform="rotate(-0 38.88 749.3004)">preprocessing constants and imputation seeds; training-derived thresholds 0.034 / 0.210</text>
    </g>
    <g id="text_39">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="762.980634" transform="rotate(-0 38.88 762.980634)">Not independently validated; not evaluated on the 44 development specimens;</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="762.93165" transform="rotate(-0 38.88 762.93165)">Not independently validated; not evaluated on the 44 development specimens;</text>
    </g>
    <g id="text_40">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="776.660634" transform="rotate(-0 38.88 776.660634)">application to the 16 LoF/LoF (parents among the 44) is descriptive</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="776.6604" transform="rotate(-0 38.88 776.6604)">application to the 16 LoF/LoF (parents of six among the 44) is descriptive</text>
    </g>
    <g id="text_41">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="790.340634" transform="rotate(-0 38.88 790.340634)">Specification: Table S17 (machine-readable with the analysis code); LoF/LoF application: Table S18</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="38.88" y="790.3404" transform="rotate(-0 38.88 790.3404)">Specification: Table S17 (machine-readable with the analysis code); LoF/LoF application: Table S18</text>
    </g>
    <g id="text_42">
     <text style="font-weight: 700; font-size: 9px; font-family: 'Arial'; text-anchor: start" x="465.84" y="57.145781" transform="rotate(-0 465.84 57.145781)">Nested family-held-out cross-validation  (one of 35 outer iterations)</text>
    </g>
    <g id="text_43">
-    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="486" y="122.335902" transform="rotate(-0 486 122.335902)">Outer training partition  (all families except the held-out family)</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="486" y="122.33565" transform="rotate(-0 486 122.33565)">Outer training partition  (all families except the held-out family)</text>
    </g>
    <g id="text_44">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="135.860634" transform="rotate(-0 486 135.860634)">(i)  MinProb imputation (q = 0.01) from training specimens only</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="135.8604" transform="rotate(-0 486 135.8604)">(i)  MinProb imputation (q = 0.01) from training specimens only</text>
    </g>
    <g id="text_45">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="149.540634" transform="rotate(-0 486 149.540634)">(ii)  no batch correction beyond DIA-NN cross-run normalization</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="149.5404" transform="rotate(-0 486 149.5404)">(ii)  no batch correction beyond DIA-NN cross-run normalization</text>
    </g>
    <g id="text_46">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="163.220634" transform="rotate(-0 486 163.220634)">(iii)  10 members (fixed seeds): stability selection on 30 class-stratified 80 % subsamples</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="163.2204" transform="rotate(-0 486 163.2204)">(iii)  10 members (fixed seeds): stability selection on 30 class-stratified 80 % subsamples</text>
    </g>
    <g id="text_47">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="176.900634" transform="rotate(-0 486 176.900634)">       (≥ 3 positives each), 1,000 highest-variance proteins per subsample, class-weighted</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="176.9004" transform="rotate(-0 486 176.9004)">       (≥ 3 positives each), 1,000 highest-variance proteins per subsample, class-weighted</text>
    </g>
    <g id="text_48">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="190.580634" transform="rotate(-0 486 190.580634)">       elastic net (α = 0.5)  →  selection-frequency ranking</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="190.5804" transform="rotate(-0 486 190.5804)">       elastic net (α = 0.5)  →  selection-frequency ranking</text>
    </g>
    <g id="text_49">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="204.260634" transform="rotate(-0 486 204.260634)">(iv)  panel size fixed at 30</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="204.2604" transform="rotate(-0 486 204.2604)">(iv)  panel size fixed at 30</text>
    </g>
    <g id="text_50">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="217.940634" transform="rotate(-0 486 217.940634)">(v)  consensus panel = 30 proteins most often in members' top 30 (ties: mean frequency);</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="217.9404" transform="rotate(-0 486 217.9404)">(v)  consensus panel = 30 proteins most often in members' top 30 (ties: mean frequency);</text>
    </g>
    <g id="text_51">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="231.620634" transform="rotate(-0 486 231.620634)">       each member: standardize (training μ, σ) → elastic net, λ by family-grouped 3-fold CV</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="231.6204" transform="rotate(-0 486 231.6204)">       each member: standardize (training μ, σ) → elastic net, λ by family-grouped 3-fold CV</text>
    </g>
    <g id="text_52">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="245.300634" transform="rotate(-0 486 245.300634)">(vi)  ensemble probability = mean of 10 member probabilities</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="245.3004" transform="rotate(-0 486 245.3004)">(vi)  ensemble probability = mean of 10 member probabilities</text>
    </g>
    <g id="text_53">
-    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="504.72" y="323.935902" transform="rotate(-0 504.72 323.935902)">Inner training set (all other families of the outer partition): steps (i)–(vi) → inner model</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="504.72" y="323.93565" transform="rotate(-0 504.72 323.93565)">Inner training set (all other families of the outer partition): steps (i)–(vi) → inner model</text>
    </g>
    <g id="text_54">
-    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="504.72" y="375.055902" transform="rotate(-0 504.72 375.055902)">Inner held-out family  →  inner out-of-fold scores</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="504.72" y="375.05565" transform="rotate(-0 504.72 375.05565)">Inner held-out family  →  inner out-of-fold scores</text>
    </g>
    <g id="text_55">
-    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="504.72" y="426.175902" transform="rotate(-0 504.72 426.175902)">(vii)  Calibration on the inner out-of-fold scores</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="504.72" y="426.17565" transform="rotate(-0 504.72 426.17565)">(vii)  Calibration on the inner out-of-fold scores</text>
    </g>
    <g id="text_56">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="504.72" y="439.700634" transform="rotate(-0 504.72 439.700634)">primary threshold: minimum inner score among positive specimens</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="504.72" y="439.65165" transform="rotate(-0 504.72 439.65165)">primary threshold: minimum inner score among positive specimens</text>
    </g>
    <g id="text_57">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="504.72" y="453.380634" transform="rotate(-0 504.72 453.380634)">secondary threshold: max. inner sensitivity s.t. specificity ≥ 0.90 (ties: fewer FP, lower τ)</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="504.72" y="453.3804" transform="rotate(-0 504.72 453.3804)">specificity-constrained threshold: max. inner sensitivity s.t. specificity ≥ 0.90 (ties: fewer FP, lower τ)</text>
    </g>
    <g id="text_58">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="504.72" y="467.060634" transform="rotate(-0 504.72 467.060634)">adaptive strategy: consensus or diverse panel, whichever has fewer inner FP at the</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="504.72" y="467.0604" transform="rotate(-0 504.72 467.0604)">adaptive strategy: consensus or diverse panel, whichever has fewer inner FP at the</text>
    </g>
    <g id="text_59">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="504.72" y="480.740634" transform="rotate(-0 504.72 480.740634)">   primary threshold (ties: inner AUC, then consensus)</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="504.72" y="480.7404" transform="rotate(-0 504.72 480.7404)">   primary threshold (ties: inner AUC, then consensus)</text>
    </g>
    <g id="text_60">
-    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start; fill: #2f6da8" x="486" y="286.625502" transform="rotate(-0 486 286.625502)">Inner family-LOFO calibration (34 folds; within the outer training partition): thresholds and adaptive strategy</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start; fill: #2f6da8" x="486" y="286.62525" transform="rotate(-0 486 286.62525)">Inner family-LOFO calibration (34 folds; within the outer training partition): thresholds and adaptive strategy</text>
    </g>
    <g id="text_61">
-    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="486" y="546.415902" transform="rotate(-0 486 546.415902)">Held-out family  (excluded from all fold-specific fitting and calibration)</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="486" y="546.41565" transform="rotate(-0 486 546.41565)">Held-out family  (excluded from all fold-specific fitting and calibration)</text>
    </g>
    <g id="text_62">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="559.940634" transform="rotate(-0 486 559.940634)">impute from the specimen's own 1 % quantile with training σ → standardize (training μ, σ)</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="559.9404" transform="rotate(-0 486 559.9404)">impute from the specimen's own 1 % quantile with training σ → standardize (training μ, σ)</text>
    </g>
    <g id="text_63">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="573.620712" transform="rotate(-0 486 573.620712)">→ mean of 10 member probabilities → call at the fold's threshold = one out-of-fold prediction</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="486" y="573.667275" transform="rotate(-0 486 573.667275)">→ mean of 10 member probabilities → call at the fold's threshold = one out-of-fold prediction</text>
    </g>
    <g id="text_64">
-    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start; fill: #3c7a3a" x="474.48" y="85.025502" transform="rotate(-0 474.48 85.025502)">Outer loop  (35 iterations, one per family)</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start; fill: #3c7a3a" x="474.48" y="85.02525" transform="rotate(-0 474.48 85.02525)">Outer loop  (35 iterations, one per family)</text>
    </g>
    <g id="text_65">
-    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="474.48" y="636.415902" transform="rotate(-0 474.48 636.415902)">Ensemble strategies  (fixed before the final run)</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial'; text-anchor: start" x="474.48" y="636.41565" transform="rotate(-0 474.48 636.41565)">Ensemble strategies  (fixed before the final run)</text>
    </g>
    <g id="text_66">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="474.48" y="649.940634" transform="rotate(-0 474.48 649.940634)">primary: consensus panel;  secondary "diverse": each member keeps its own top 30;</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="474.48" y="649.903525" transform="rotate(-0 474.48 649.903525)">primary: consensus panel;  alternative "diverse": each member keeps its own top 30;</text>
    </g>
    <g id="text_67">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="474.48" y="663.620634" transform="rotate(-0 474.48 663.620634)">secondary "adaptive": chosen per fold in the inner loop (vii)</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="474.48" y="663.6204" transform="rotate(-0 474.48 663.6204)">alternative "adaptive": chosen per fold in the inner loop (vii)</text>
    </g>
    <g id="text_68">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="60.48" y="833.670234" transform="rotate(-0 60.48 833.670234)">label-free data handling / study design</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="60.48" y="833.67" transform="rotate(-0 60.48 833.67)">label-free data handling / study design</text>
    </g>
    <g id="text_69">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="247.68" y="833.670234" transform="rotate(-0 247.68 833.670234)">estimated from the outer training partition only</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="247.68" y="833.67" transform="rotate(-0 247.68 833.67)">estimated from the outer training partition only</text>
    </g>
    <g id="text_70">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="470.88" y="833.670234" transform="rotate(-0 470.88 833.670234)">held-out family</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="470.88" y="833.67" transform="rotate(-0 470.88 833.67)">held-out family</text>
    </g>
    <g id="text_71">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="658.08" y="833.670312" transform="rotate(-0 658.08 833.670312)">evaluation / reported output</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="658.08" y="833.716875" transform="rotate(-0 658.08 833.716875)">evaluation / reported output</text>
    </g>
    <g id="text_72">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="845.28" y="833.670312" transform="rotate(-0 845.28 833.670312)">frozen final model</text>
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: start" x="845.28" y="833.668125" transform="rotate(-0 845.28 833.668125)">frozen final model</text>
    </g>
    <g id="text_73">
     <text style="font-size: 7.6px; font-family: 'Arial'; text-anchor: start; fill: #404040" x="30.24" y="855.168875" transform="rotate(-0 30.24 855.168875)">LoF, loss-of-function; Mis, missense; LOFO, leave-one-family-out; CV, cross-validation; FP, false positives; MinProb, left-censored imputation at the 1 % quantile.</text>
@@ -598,7 +598,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pa8f44d756c">
+  <clipPath id="pfbf4e68b2b">
    <rect x="8.64" y="8.64" width="936" height="866.16"/>
   </clipPath>
  </defs>

@@ -1,4 +1,4 @@
-"Permutation","Consensus-30 out-of-fold AUC (primary statistic)","Diverse-30 out-of-fold AUC (auxiliary)","Consensus-30 family-level AUC (descriptive)","Permuted positive specimens coinciding with true LoF/Mis specimens (n of 7)"
+"Permutation","Consensus-30 out-of-fold AUC (primary statistic)","Diverse-30 out-of-fold AUC (alternative)","Consensus-30 family-level AUC (descriptive)","Permuted positive specimens coinciding with true LoF/Mis specimens (n of 7)"
 "perm_001",0.5135,0.5097,0.56,2
 "perm_002",0.4788,0.6409,0.5733,3
 "perm_003",0.3977,0.3629,0.4133,2

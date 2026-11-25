@@ -23,7 +23,7 @@ norm <- list(
   `ACTB (primary)`        = log2(x) - log2(actb),
   `Sample median`         = log2(x) - apply(L[cc, ], 2, median),
   `Total intensity`       = log2(x) - log2(colSums(M[cc, ])),
-  `None (raw intensity)`  = log2(x))
+  `None (raw intensity)`  = log2(x))   # no further sample-level scaling: the input intensities already carry DIA-NN cross-run normalization
 pg <- read.delim(file.path(D, "DBS-Tohoku.pg_matrix.tsv"), check.names = FALSE)
 pgs <- names(pg)[sapply(pg, is.numeric)]; v <- as.numeric(pg[pg$Protein.Group == "Q9UJS0", pgs]); names(v) <- sub(".*[\\\\/]", "", sub("\\.raw$|\\.d$", "", pgs))
 v <- v[sc]; v[is.na(v)] <- 0; norm[["DIA-NN MaxLFQ"]] <- log2(v)
@@ -51,14 +51,14 @@ rows <- lapply(comps, function(cm) {
              `AUC, sample-median normalization` = sprintf("%.3f", alt["Sample median"]),
              `AUC, total-intensity normalization` = sprintf("%.3f", alt["Total intensity"]),
              `AUC, DIA-NN MaxLFQ` = sprintf("%.3f", alt["DIA-NN MaxLFQ"]),
-             `AUC, unnormalized` = sprintf("%.3f", alt["None (raw intensity)"]), check.names = FALSE)
+             `AUC, DIA-NN cross-run normalization alone` = sprintf("%.3f", alt["None (raw intensity)"]), check.names = FALSE)
 })
 tab <- do.call(rbind, rows)
 print(tab, row.names = FALSE)
 
 title <- "Table S[x]. Discriminative performance of SLC25A13 abundance alone."
 legend <- c(
-  "Area under the ROC curve (AUC) for SLC25A13 abundance as a single marker, with lower abundance indicating the positive (disease or reduced) group. The primary column uses the ACTB-normalized abundance (log2 of the SLC25A13 intensity divided by the ACTB intensity in the same specimen); specimens in which SLC25A13 was not quantified (all 16 LoF/LoF specimens) were assigned the lowest rank. 95% confidence intervals are from a family-cluster bootstrap (families resampled with replacement, 2,000 replicates). The remaining columns give point estimates under the alternative normalization strategies described in the Methods (sample-median centering and total-intensity scaling computed on the 3,325 protein groups with at least three unique peptides quantified in all 60 specimens; DIA-NN MaxLFQ protein quantities; unnormalized raw intensity).",
+  paste0("Area under the ROC curve (AUC) for SLC25A13 abundance as a single marker, with lower abundance indicating the positive (disease or reduced) group. The primary column uses the ACTB-normalized abundance (log2 of the SLC25A13 intensity divided by the ACTB intensity in the same specimen); specimens in which SLC25A13 was not quantified (all 16 LoF/LoF specimens) were assigned the lowest rank. 95% confidence intervals are from a family-cluster bootstrap (families resampled with replacement, 2,000 replicates). The remaining columns give point estimates under the alternative normalization strategies described in the Methods (sample-median centering and total-intensity scaling computed on the ", format(sum(cc), big.mark = ","), " protein groups with at least three unique peptides quantified in all 60 specimens; DIA-NN MaxLFQ protein quantities; DIA-NN cross-run normalization alone, i.e. without further sample-level normalization)."),
   "The AUC of 1.000 for LoF/LoF versus all other participants, and for reduced versus normal groups, reflects complete separation by construction (SLC25A13 was quantified in 0 of 16 LoF/LoF specimens and in 44 of 44 other specimens) and is equivalent to the detection frequencies reported in the Results; the corresponding confidence intervals are degenerate. These values describe a clinically ascertained cohort in which the control groups differ from the affected groups in age and clinical state; they are not estimates of screening performance. The comparison of LoF/Mis individuals with carriers shows that SLC25A13 abundance alone does not separate these groups.")
 dir.create(file.path(REPO, "04_SLC25A13_measurement", "results"), showWarnings = FALSE)
 wb <- createWorkbook(); addWorksheet(wb, "Table S SLC25A13 AUC")
@@ -66,7 +66,7 @@ hs <- createStyle(textDecoration = "bold", border = "TopBottom", wrapText = TRUE
 writeData(wb, 1, title, startRow = 1); addStyle(wb, 1, createStyle(textDecoration = "bold"), rows = 1, cols = 1)
 writeData(wb, 1, tab, startRow = 3, headerStyle = hs)
 for (i in seq_along(legend)) writeData(wb, 1, legend[i], startRow = 3 + nrow(tab) + 1 + i)
-setColWidths(wb, 1, cols = 1:ncol(tab), widths = c(52, 12, 12, 26, 16, 16, 14, 14))
+setColWidths(wb, 1, cols = 1:ncol(tab), widths = c(52, 12, 12, 26, 16, 16, 14, 20))
 addStyle(wb, 1, createStyle(halign = "center"), rows = 4:(3 + nrow(tab)), cols = 2:ncol(tab), gridExpand = TRUE, stack = TRUE)
 saveWorkbook(wb, file.path(REPO, "04_SLC25A13_measurement", "results", "TableS_SLC25A13_alone_AUC.xlsx"), overwrite = TRUE)
 mdrow <- function(r) paste0("| ", paste(r, collapse = " | "), " |")

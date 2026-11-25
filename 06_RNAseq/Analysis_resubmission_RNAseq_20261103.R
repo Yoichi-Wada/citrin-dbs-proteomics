@@ -89,6 +89,8 @@ GSEA_MAX    <- 500
 RUN_PANEL_ORA <- TRUE
 SHOW_N      <- 15
 EXTREME_LFC <- 5     # |log2FC| above which genes are labelled on Volcano/MA (Reviewer 2)
+# Figure titles: the primary run (ENRICHED_PRIMARY; Supplementary Figs. S9-S11) is untagged; the other runs keep their run tag.
+fig_title <- function(run_tag, txt) if (identical(run_tag, "ENRICHED_PRIMARY")) txt else paste0("[", run_tag, "] ", txt)
 
 # GO/Reactome terms reported in the submitted manuscript (Fig. 3C/D, Table S12,
 # Results/Discussion). They are re-evaluated in every run.
@@ -688,15 +690,12 @@ run_one_pipeline <- function(mode_tag, design_tag, design_formula,
   dds <- DESeq(dds, quiet = TRUE)
 
   res_pvc <- results(dds, contrast = c("status", "patient", "control"))
-  # Shrunken LFC for Volcano/MA display only (apeglm if installed; otherwise 'normal')
+  # Shrunken LFC (DESeq2 normal estimator, as stated in the Methods and used for the deposited results).
+  # Fixed to type = "normal" so that the result does not depend on whether apeglm happens to be installed.
   res_pvc_shr <- tryCatch({
-    if (requireNamespace("apeglm", quietly = TRUE)) {
-      lfcShrink(dds, coef = "status_patient_vs_control", type = "apeglm", quiet = TRUE)
-    } else {
-      lfcShrink(dds, contrast = c("status", "patient", "control"), type = "normal", quiet = TRUE)
-    }
+    lfcShrink(dds, contrast = c("status", "patient", "control"), type = "normal", quiet = TRUE)
   }, error = function(e) { mode_log("[DESeq2] lfcShrink failed, using unshrunken LFC: ", conditionMessage(e)); res_pvc })
-  shr_type <- if (requireNamespace("apeglm", quietly = TRUE)) "apeglm" else "normal"
+  shr_type <- "normal"
   mode_log("[DESeq2] LFC shrinkage type for plots: ", shr_type)
 
   de <- export_deseq2_results(res_pvc, res_shr = res_pvc_shr, model_tag = design_tag, contrast_tag = "patient_vs_control")
@@ -750,7 +749,7 @@ run_one_pipeline <- function(mode_tag, design_tag, design_formula,
     write_csv_safe(slc_counts, file.path(DIR_SLC, "SLC25A13_counts_per_sample.csv"))
     p_slc <- ggplot(slc_counts, aes(x = status, y = normalized_count, colour = sex, shape = batch)) +
       geom_jitter(width = 0.12, size = 3, alpha = 0.9) +
-      labs(title = paste0("[", run_tag, "] SLC25A13 normalized counts"),
+      labs(title = fig_title(run_tag, "SLC25A13 normalized counts"),
            subtitle = sprintf("DESeq2 patient vs control: log2FC = %.2f, P = %.2g, FDR = %.2g%s",
                               res_pvc_nocook[slc_id, "log2FoldChange"], res_pvc_nocook[slc_id, "pvalue"],
                               res_pvc_nocook[slc_id, "padj"],
@@ -852,7 +851,7 @@ run_one_pipeline <- function(mode_tag, design_tag, design_formula,
     ggrepel::geom_text_repel(data = lab_df, aes(label = paste0(Label, " (", Chr, ")")), size = 2.5, max.overlaps = 40) +
     scale_color_manual(values = c(Up = "red", Down = "blue", NS = "black")) +
     theme_bw() +
-    labs(title = paste0("[", run_tag, "] Volcano: patient vs control"),
+    labs(title = fig_title(run_tag, "Volcano: patient vs control"),
          subtitle = paste0("LFC shrinkage: ", shr_type, "; circled = chrX/chrY DEGs; labelled = |LFC| >= ", EXTREME_LFC, " or chrX/chrY"),
          x = "log2 fold change", y = "-log10(adjusted p-value)", color = "DEG")
   save_pdf(p_vol, "Volcano", w = 7, h = 6)
@@ -900,7 +899,7 @@ run_one_pipeline <- function(mode_tag, design_tag, design_formula,
     ggrastr::geom_point_rast(aes(color = Significance), size = 1.8, alpha = 0.7, raster.dpi = 300) +
     geom_hline(yintercept = 0, linetype = "dashed") +
     scale_color_manual(values = ma_cols, drop = FALSE) +
-    labs(title = paste0("[", run_tag, "] MA plot (", shr_type, " shrinkage)"), x = "Average log2 expression (A)", y = "log2 fold change") +
+    labs(title = fig_title(run_tag, paste0("MA plot (", shr_type, " shrinkage)")), x = "Average log2 expression (A)", y = "log2 fold change") +
     theme_minimal() + theme(legend.position = "none")
   p_ma_B <- ggplot(ma_df, aes(x = Amean, y = logFC)) +
     ggrastr::geom_point_rast(aes(color = Significance), size = 1.8, alpha = 0.7, raster.dpi = 300) +
@@ -908,7 +907,7 @@ run_one_pipeline <- function(mode_tag, design_tag, design_formula,
     ggrepel::geom_text_repel(data = ma_lab, aes(label = paste0(Label, " (", Chr, ")")), size = 2.5, max.overlaps = 40) +
     geom_hline(yintercept = 0, linetype = "dashed") +
     scale_color_manual(values = ma_cols, drop = FALSE) +
-    labs(title = "Labelled: |LFC| >= 5 or chrX/chrY DEGs", x = "Average log2 expression (A)", y = "log2 fold change") +
+    labs(title = expression("Labeled: |LFC|" >= "5 or chrX/chrY DEGs"), x = "Average log2 expression (A)", y = "log2 fold change") +
     theme_minimal() + theme(legend.position = "none")
   slc_row_m <- ma_df %>% dplyr::filter(SYMBOL %in% "SLC25A13")
   if (nrow(slc_row_m) > 0) {
@@ -917,7 +916,7 @@ run_one_pipeline <- function(mode_tag, design_tag, design_formula,
       geom_text(data = slc_row_m, inherit.aes = FALSE, aes(x = Amean, y = logFC, label = "SLC25A13"), vjust = -1.0, size = 4)
     p_ma_A <- hl(p_ma_A); p_ma_B <- hl(p_ma_B)
   }
-  save_pdf((p_ma_A + p_ma_B) + patchwork::plot_annotation(title = paste0("[", run_tag, "] patient vs control: MA plot (DESeq2)")),
+  save_pdf((p_ma_A + p_ma_B) + patchwork::plot_annotation(title = fig_title(run_tag, "patient vs control: MA plot (DESeq2)")),
            "MA_pair_SLC25A13_highlight", w = 12, h = 6)
 
   # -----------------------------

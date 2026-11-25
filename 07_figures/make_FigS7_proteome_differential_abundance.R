@@ -9,7 +9,7 @@ add_family <- function(df) { if (!"family_id" %in% names(df)) { fm <- read.csv(f
 # Data: WW-fixed raw_data.xlsx (DIA-NN protein groups, 60 DBS). No ComBat.
 # Preprocessing as in the manuscript: log2 (0 -> NA), ACTB centering (P60709), Unique peptides >= 3,
 # MinProb imputation (imputeLCMD::impute.MinProb, q = 0.01, seed 2025) on the full 60-specimen matrix.
-# Model: limma, ~ 0 + group + run (analytical run as covariate); contrasts LoF/LoF vs Ref/Ref, LoF/Mis vs Ref/Ref, LoF/Mis vs LoF/LoF.
+# Model: limma, ~ 0 + group + run (analytical run as covariate); contrasts LoF/LoF vs healthy controls, LoF/Mis vs healthy controls, LoF/Mis vs LoF/LoF.
 # Global test: F-test of the four group contrasts (ANOVA-like, batch-adjusted), BH; top 100 by adjusted P shown as z-score heatmap.
 suppressPackageStartupMessages({library(openxlsx); library(limma); library(ggplot2); library(ggrepel); library(pheatmap); library(cowplot); library(grid)})
 DD <- DATA
@@ -64,10 +64,10 @@ depF <- ttF[ttF$adj.P.Val < FDR, ]; cat("global F adjP<0.05:", nrow(depF), "\n")
 top_ids <- head(depF$FeatureID, TOPN)
 # ---- plots ----
 FAM <- "Arial"
-lab_grp <- c(RefRef_CT = "Ref/Ref controls", RefLoF = "Ref/LoF", LoFLoF = "LoF/LoF", LoFMS = "LoF/Mis", RefRef_DD = "Ref/Ref disease controls")
+lab_grp <- c(RefRef_CT = "Healthy controls", RefLoF = "Carriers", LoFLoF = "LoF/LoF", LoFMS = "LoF/Mis", RefRef_DD = "Disease controls")
 grp_cols <- c(RefRef_CT = "#FF725C", RefLoF = "#EFB118", LoFLoF = "#6CC5B0", LoFMS = "#97BBF5", RefRef_DD = "#FF8AB7")
 base_theme <- theme_classic(base_size = 8, base_family = FAM) + theme(plot.title = element_text(size = 8, face = "plain", hjust = 0), legend.position = "none", axis.text = element_text(size = 7, colour = "black"))
-titles <- c(LoFLoF_vs_RefRef = "LoF/LoF vs Ref/Ref controls", LoFMS_vs_RefRef = "LoF/Mis vs Ref/Ref controls", LoFMS_vs_LoFLoF = "LoF/Mis vs LoF/LoF")
+titles <- c(LoFLoF_vs_RefRef = "LoF/LoF vs healthy controls", LoFMS_vs_RefRef = "LoF/Mis vs healthy controls", LoFMS_vs_LoFLoF = "LoF/Mis vs LoF/LoF")
 ups <- c(LoFLoF_vs_RefRef = "LoF/LoF", LoFMS_vs_RefRef = "LoF/Mis", LoFMS_vs_LoFLoF = "LoF/Mis")
 sig_cols <- c(up = "#D7301F", down = "#2166AC", ns = "grey70")
 ma_list <- list(); vol_list <- list()

@@ -1,21 +1,15 @@
 sample,group,peptide,charge,cls,rt_used,rt_source,diann_q,diann_quantity,top6_fragments,n_coeluting,cosine,pattern_weighted_intensity
-WW_6,"Healthy adult
-(Ref/Ref)",EEFVLAAQK,2,SLC25A13-specific,39.59,DIA-NN,0.002197505,314022.0,y5;y4;y7;y6;y3;b3,5,0.96,30709
-WS_10,"Carrier
-(Ref/LoF)",EEFVLAAQK,2,SLC25A13-specific,39.59,DIA-NN,0.0004925888,171257.75,y5;y4;y7;y6;y3;b3,6,0.99,24120
+WW_6,Healthy adult,EEFVLAAQK,2,SLC25A13-specific,39.59,DIA-NN,0.002197505,314022.0,y5;y4;y7;y6;y3;b3,5,0.96,30709
+WS_10,Carrier,EEFVLAAQK,2,SLC25A13-specific,39.59,DIA-NN,0.0004925888,171257.75,y5;y4;y7;y6;y3;b3,6,0.99,24120
 SS_13,"Citrin deficiency
 LoF/LoF",EEFVLAAQK,2,SLC25A13-specific,39.61,aligned,,,y5;y4;y7;y6;y3;b3,3,0.83,12814
 SM_5,"Citrin deficiency
 LoF/Mis",EEFVLAAQK,2,SLC25A13-specific,39.42,DIA-NN,0.0015598638,292801.06,y5;y4;y7;y6;y3;b3,5,0.97,38540
-DD_17,"Disease control
-(Ref/Ref)",EEFVLAAQK,2,SLC25A13-specific,39.58,DIA-NN,0.0005465121,486562.78,y5;y4;y7;y6;y3;b3,6,1.0,65873
-WW_6,"Healthy adult
-(Ref/Ref)",DLGIFGLYK,2,SLC25A12-specific,74.98,DIA-NN,0.0006494251,204126.1,b3;y7;y5;b4;y4;y6,4,1.0,45268
-WS_10,"Carrier
-(Ref/LoF)",DLGIFGLYK,2,SLC25A12-specific,74.94,DIA-NN,0.00051990815,246855.42,b3;y7;y5;b4;y4;y6,6,1.0,56674
+DD_17,Disease control,EEFVLAAQK,2,SLC25A13-specific,39.58,DIA-NN,0.0005465121,486562.78,y5;y4;y7;y6;y3;b3,6,1.0,65873
+WW_6,Healthy adult,DLGIFGLYK,2,SLC25A12-specific,74.98,DIA-NN,0.0006494251,204126.1,b3;y7;y5;b4;y4;y6,4,1.0,45268
+WS_10,Carrier,DLGIFGLYK,2,SLC25A12-specific,74.94,DIA-NN,0.00051990815,246855.42,b3;y7;y5;b4;y4;y6,6,1.0,56674
 SS_13,"Citrin deficiency
 LoF/LoF",DLGIFGLYK,2,SLC25A12-specific,75.02,DIA-NN,0.000547838,262526.38,b3;y7;y5;b4;y4;y6,6,0.98,72437
 SM_5,"Citrin deficiency
 LoF/Mis",DLGIFGLYK,2,SLC25A12-specific,74.91,DIA-NN,0.00039772934,358090.7,b3;y7;y5;b4;y4;y6,6,0.98,107842
-DD_17,"Disease control
-(Ref/Ref)",DLGIFGLYK,2,SLC25A12-specific,74.98,DIA-NN,0.0007973615,259090.86,b3;y7;y5;b4;y4;y6,6,1.0,74367
+DD_17,Disease control,DLGIFGLYK,2,SLC25A12-specific,74.98,DIA-NN,0.0007973615,259090.86,b3;y7;y5;b4;y4;y6,6,1.0,74367

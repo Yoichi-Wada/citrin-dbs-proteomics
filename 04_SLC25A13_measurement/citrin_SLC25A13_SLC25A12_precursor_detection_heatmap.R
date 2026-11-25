@@ -25,7 +25,9 @@
 #      "O75746", proteotypic, quantified in >= A12_MIN_FRACTION of specimens
 #      (objective rule, stated in the caption; I/L-isobaric GLIPQLIGVAPEK excluded).
 # Sample order within groups is as in the original script. Group order (WW, WS, SS, SM, DD)
-# and group labels follow Fig. 2A (healthy adult, carrier, LoF/LoF, LoF/Mis, disease control; 2026-11-07).
+# and group labels follow Fig. 2A (healthy controls, carriers, LoF/LoF, LoF/Mis, disease controls), with LoF/LoF and
+# LoF/Mis under the common heading "Citrin deficiency". The panel carries no title or caption: the definition of
+# detection, the >= 90% rule for the SLC25A12-specific rows and the note on GLLPQLLGVAPEK (*) are given above.
 # ============================================================================
 
 if (!requireNamespace("ggplot2", quietly = TRUE)) {
@@ -135,9 +137,7 @@ if (any(colSums(rbind(present_sh, present12)[, ss_cols, drop = FALSE]) < 1L)) {
 }
 
 # --- Long format ---------------------------------------------------------------
-block_labels <- c(SLC13 = sprintf("SLC25A13-specific\n(n = %d)", nrow(present13)),
-                  SH    = sprintf("Shared\nA12 / A13 (n = %d)", nrow(present_sh)),
-                  SLC12 = sprintf("SLC25A12-specific\ncontrols (n = %d)", nrow(present12)))
+block_labels <- c(SLC13 = "SLC25A13-specific", SH = "Shared", SLC12 = "SLC25A12-specific")
 make_long <- function(present, block, il_flag = rep(FALSE, nrow(present))) {
   peptides <- rownames(present)
   n_det <- rowSums(present)
@@ -155,8 +155,7 @@ hmap <- rbind(make_long(present13, "SLC13", il_ambiguous13),
 hmap$Detection <- factor(ifelse(hmap$detected, "Quantified", "Not quantified"),
                          levels = c("Quantified", "Not quantified"))
 hmap$GroupCode <- sub("_.*$", "", hmap$SampleID)
-group_labels <- c(WW = "Healthy adult\n(Ref/Ref), n = 6", WS = "Carrier\n(Ref/LoF), n = 10", SS = "LoF/LoF\nn = 16",
-                  SM = "LoF/Mis\nn = 7", DD = "Disease control\n(Ref/Ref), n = 21")
+group_labels <- c(WW = "Healthy\ncontrols", WS = "Carriers", SS = "LoF/LoF", SM = "LoF/Mis", DD = "Disease controls")
 hmap$Group <- factor(unname(group_labels[hmap$GroupCode]), levels = unname(group_labels[group_order]))
 hmap$SampleID <- factor(hmap$SampleID, levels = sample_cols)
 hmap$Block <- factor(unname(block_labels[hmap$block]), levels = unname(block_labels))
@@ -173,20 +172,9 @@ p <- ggplot(hmap, aes(x = SampleID, y = label, fill = Detection)) +
   scale_fill_manual(values = c("Quantified" = "#4269D0", "Not quantified" = "#E8EDF3"), drop = FALSE, name = NULL) +
   scale_x_discrete(drop = TRUE, expand = expansion(add = 0.48)) +
   scale_y_discrete(expand = expansion(add = 0.30)) +
-  labs(title = "Precursor-level detection of SLC25A13, shared and SLC25A12 peptides across 60 DBS specimens",
-       subtitle = "DIA-NN precursors at 1% precursor and protein-group FDR; pre-imputation quantification",
-       x = NULL, y = NULL,
-       caption = paste0(
-         "Detection: positive, finite precursor intensity in DIA-NN pr_matrix.tsv; blank/0: not quantified. ",
-         "SLC25A12-specific control rows: proteotypic SLC25A12 precursors quantified in >= ",
-         round(100 * A12_MIN_FRACTION), "% of specimens.\n",
-         "* GLLPQLLGVAPEK is isobaric with SLC25A12 GLIPQLIGVAPEK (I/L ambiguity); DIA-NN assigns the two by retention time, ",
-         "so this row is not used as evidence of sequence specificity.")) +
+  labs(x = NULL, y = NULL) +
   theme_minimal(base_size = 10) +
-  theme(plot.title = element_text(face = "bold", size = 12, color = "#17212B"),
-        plot.subtitle = element_text(size = 9.3, color = "#445467"),
-        plot.caption = element_text(size = 8, color = "#445467", hjust = 0, lineheight = 1.15),
-        axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.50, size = 6.8, color = "#233147"),
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.50, size = 6.8, color = "#233147"),
         axis.text.y = element_text(size = 8.9, color = "#17212B"),
         axis.ticks = element_blank(),
         panel.grid = element_blank(),
@@ -196,13 +184,27 @@ p <- ggplot(hmap, aes(x = SampleID, y = label, fill = Detection)) +
         strip.text.x = element_text(size = 8.4, face = "bold", color = "#17212B", lineheight = 0.95),
         strip.text.y.left = element_text(size = 8.2, lineheight = 0.95, face = "bold", color = "#17212B", angle = 90),
         strip.placement = "outside",
-        legend.position = "top", legend.justification = "right",
+        legend.position = "bottom", legend.justification = "center",
         legend.text = element_text(size = 9),
         legend.key.width = grid::unit(0.48, "cm"), legend.key.height = grid::unit(0.35, "cm"),
         plot.margin = margin(8, 10, 8, 8))
 
+# Common heading over the LoF/LoF and LoF/Mis columns: one extra row above the group strips
+grDevices::pdf(NULL)                                   # null device: building the grob must not write Rplots.pdf
+g <- ggplotGrob(p)
+invisible(grDevices::dev.off())
+st <- g$layout[grepl("^strip-t", g$layout$name), ]; st <- st[order(st$l), ]      # one strip per group, left to right
+stopifnot(nrow(st) == length(group_order))
+cd <- match(c("SS", "SM"), group_order)
+g <- gtable::gtable_add_rows(g, grid::unit(0.55, "cm"), pos = min(st$t) - 1)
+g <- gtable::gtable_add_grob(g, grid::grobTree(
+       grid::textGrob("Citrin deficiency", y = grid::unit(0.66, "npc"), gp = grid::gpar(fontface = "bold", fontsize = 8.4, col = "#17212B")),
+       grid::segmentsGrob(x0 = 0, x1 = 1, y0 = grid::unit(0.22, "npc"), y1 = grid::unit(0.22, "npc"), gp = grid::gpar(col = "#17212B", lwd = 1))),
+     t = min(st$t), l = st$l[cd[1]], r = st$l[cd[2]], clip = "off", name = "citrin-deficiency-heading")
+p <- g
+
 n_rows <- nrow(present13) + nrow(present_sh) + nrow(present12)
-fig_h <- 2.6 + 0.33 * n_rows
+fig_h <- 1.9 + 0.33 * n_rows
 out_pdf <- file.path(OUTPUT_DIR, paste0(OUTPUT_STEM, ".pdf"))
 out_png <- file.path(OUTPUT_DIR, paste0(OUTPUT_STEM, ".png"))
 ggsave(out_pdf, plot = p, width = 13, height = fig_h, units = "in", device = "pdf", useDingbats = FALSE, bg = "white")
